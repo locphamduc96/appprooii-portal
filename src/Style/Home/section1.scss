@@ -1,0 +1,31 @@
+.home {
+    .section1 {
+        position: relative;
+
+        height: 80vh;
+
+        background-image: url(../../assets/images/BG_Header-small.jpg.png);
+        background-size: cover;
+        background-position: top center;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-text {
+            padding-top: 18vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 120px;
+
+            font-family: $font-family;
+            font-size: 65px;
+            font-weight: 900;
+            text-transform: uppercase;
+
+            color: #0a2d27;
+        }
+    }
+}

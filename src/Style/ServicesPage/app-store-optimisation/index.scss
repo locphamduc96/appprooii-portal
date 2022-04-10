@@ -1,0 +1,210 @@
+.app-store-optimisation {
+    .section1 {
+        position: relative;
+        width: 100%;
+        height: 913px;
+        background-image: url(../../../assets/images/2svsub-BG_Header.jpg);
+        background-size: cover;
+        background-position: top center;
+        margin-bottom: 100px;
+
+        &-wrapper {
+            margin-left: 38%;
+            margin-right: auto;
+            padding-top: 440px;
+            width: 900px;
+            height: 500px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &-title {
+            font-size: 70px;
+            font-weight: 800;
+            filter: drop-shadow(15px 10px 5px #148D75BD);
+        }
+
+        &-desc {
+            margin-top: 30px;
+
+            font-size: 22px;
+            font-weight: 400;
+
+            color: #848282;
+        }
+    }
+
+    .section2 {
+        position: relative;
+
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px;
+
+        display: flex;
+        justify-content: center;
+
+        &-title {
+            position: relative;
+
+            &-img {
+                position: absolute;
+                top: -20px;
+                left: -50px;
+            }
+
+            p {
+                position: relative;
+                font-size: 56px;
+                font-weight: 800;
+
+                color: $primary-color;
+
+                .green {
+                    color: $secondary-color;
+                }
+            }
+        }
+
+        &-desc {
+            margin-top: 15px;
+            font-size: 22px;
+            color: #848282;
+        }
+
+        &-bubble-container {
+            margin-top: 75px;
+
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        &-bubble {
+            position: relative;
+
+            width: 250px;
+            height: calc(0.652 * 250px);
+
+            background-image: url(../../../assets/images/Shape-WCWD-1.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            padding: 20px;
+
+            &-content {
+                position: absolute;
+
+                font-size: 17px;
+                font-weight: 700;
+                color: $black-color;
+            }
+
+            &-column {
+                position: relative;
+                top: 150px;
+                left: 100px;
+
+                width: 3px;
+                height: 100px;
+
+                border-radius: 1px;
+
+                background-color: #CAF4E8;
+
+                &.column-1 {
+                    height: 280px;
+                }
+
+                &.column-2 {
+                    height: 240px;
+                }
+
+                &.column-3 {
+                    height: 200px;
+                }
+            }
+        }
+
+        &-arrow {
+            margin-left: 100px;
+        }
+    }
+
+    .section3 {
+        position: relative;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &-title {
+            position: relative;
+            margin-bottom: 50px;
+
+            &-img {
+                position: absolute;
+                top: -20px;
+                left: -50px;
+            }
+
+            p {
+                position: relative;
+                font-size: 56px;
+                font-weight: 800;
+
+                color: $primary-color;
+
+                .green {
+                    color: $secondary-color;
+                }
+            }
+        }
+
+        &-list-work {
+            margin-bottom: 100px;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        &-card {
+            width: 334px;
+            height: 370px;
+
+            background-color: #E3F7F3;
+            border-radius: 30px;
+
+            &-img {
+                width: 334px;
+                height: 370px;
+            }
+        }
+
+        &-btn-see-more {
+            width: 334px;
+            height: 370px;
+            padding-top: 50px;
+            padding-left: 50px;
+            padding-right: 50px;
+
+            .div {
+                width: 200px !important;
+            }
+        }
+    }
+}

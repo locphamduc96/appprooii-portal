@@ -1,0 +1,99 @@
+.news {
+    .section1 {
+        position: relative;
+
+        width: 100%;
+        height: 60vh;
+    }
+
+    .section2 {
+        position: relative;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+        display: flex;
+        justify-content: center;
+
+        &-list-new {
+            margin: 100px 0 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        &-news {
+            cursor: pointer;
+
+            position: relative;
+            width: 332px;
+            height: 395px;
+
+            border: 3px solid #E5F7F4;
+            border-radius: 30px;
+
+            &-img {
+                position: relative;
+                top: 0;
+                left: 0;
+                width: 326px;
+                height: 223px;
+
+                border: none;
+                border-radius: 27px;
+                background: #D8FFE7 0% 0% no-repeat padding-box;
+
+                top: 0px;
+            }
+
+            &-time {
+                padding: 16px 16px 0px;
+                font-size: 18px;
+                color: #BDBDBD;
+            }
+
+            &-title {
+                padding: 16px 16px 0px;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 24px;
+                color: $black-color;
+            }
+
+            &-arrow {
+                position: absolute;
+                bottom: 20px;
+                right: 20px
+            }
+        }
+
+        &-pagination {
+            width: fit-content;
+            margin-left: auto;
+            margin-right: 50px;
+            margin-bottom: 100px;
+
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+
+
+            .pagination-prev,
+            .pagination-next {
+                cursor: pointer;
+            }
+
+            .pagination-number {
+                cursor: pointer;
+                color: $black-color;
+                font-size: 18px;
+
+                &.current {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
