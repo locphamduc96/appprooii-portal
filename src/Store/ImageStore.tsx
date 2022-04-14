@@ -5,8 +5,10 @@ import iconMarketing from '../assets/images/icon-marketing.png';
 import iconChess from '../assets/images/icon-chess.png';
 import arrow from '../assets/images/arrow.png';
 import arrow1 from '../assets/images/arrow_1.png';
+import arrow10 from '../assets/images/arrow-10.png';
 import homeBannerBackground from '../assets/images/home-banner-background.png';
 import blockBackground from '../assets/images/block-background.png';
+import puzzle from '../assets/images/puzzelsv1.png';
 
 import wetvImg from '../assets/images/wetv.jpg';
 import mbImg from '../assets/images/mb.jpg';
@@ -41,6 +43,8 @@ import caseStudyIconOptimise from '../assets/images/optimize-1.png';
 import newsBanner from '../assets/images/news-banner.png';
 import newsImage from '../assets/images/news-1.png';
 
+
+
 const ImageStore = {
   approiLogo,
 
@@ -49,8 +53,10 @@ const ImageStore = {
   iconChess,
   arrow,
   arrow1,
+  arrow10,
   homeBannerBackground,
   blockBackground,
+  puzzle,
 
   wetvImg,
   mbImg,
@@ -78,8 +84,8 @@ const ImageStore = {
   serviceSection2Image,
   serviceSection3Image,
 
-  caseStudyHocMai,
-  caseStudyTraveloka,
+  panelHocMai: caseStudyHocMai,
+  panelTraveloka: caseStudyTraveloka,
   caseStudyIconOptimise,
 
   newsBanner,

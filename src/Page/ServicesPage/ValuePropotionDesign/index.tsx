@@ -1,3 +1,5 @@
+import ImageStore from "../../../Store/ImageStore";
+
 const ValuePropotionDesign = () => {
   return (
     <div className='value-propotion-design'>
@@ -30,7 +32,7 @@ const ValuePropotionDesign = () => {
           <div className='section2-title'>
             <img
               className='section2-title-img'
-              src='../images/Layer-36.png'
+              src={ImageStore.headerBackground}
               alt=''
             />
             <p>
@@ -86,7 +88,7 @@ const ValuePropotionDesign = () => {
           <div className='section3-title'>
             <img
               className='section3-title-img'
-              src='../images/Layer-36.png'
+              src={ImageStore.headerBackground}
               alt=''
             />
             <p>
@@ -100,7 +102,7 @@ const ValuePropotionDesign = () => {
           <div className='section3-content'>
             <img
               className='section3-background'
-              src='../images/puzzelsv1.png'
+              src={ImageStore.puzzle}
               alt=''
             />
             <p className='section3-content-1'>

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import ImageStore from '../../../Store/ImageStore';
 
 const AppStoreOptimisation = () => {
   return (
@@ -31,7 +32,7 @@ const AppStoreOptimisation = () => {
           <div className='section2-title'>
             <img
               className='section2-title-img'
-              src='../images/Layer-36.png'
+              src={ImageStore.headerBackground}
               alt=''
             />
             <p>
@@ -59,14 +60,14 @@ const AppStoreOptimisation = () => {
               ]}
             />
           </div>
-          <img className='section2-arrow' src='../images/arrow-10.png' alt='' />
+          <img className='section2-arrow' src={ImageStore.arrow10} alt='' />
         </div>
       </div>
       <div className='section3'>
         <div className='wrapper'>
           <div className='section3-title'>
             <img
-              src='../images/Layer-36.png'
+              src={ImageStore.headerBackground}
               alt=''
               className='section3-title-img'
             />
@@ -75,10 +76,10 @@ const AppStoreOptimisation = () => {
             </p>
           </div>
           <div className='section3-list-work'>
-            <Work imgSrc='../images/hocmai.png' />
+            <Work imgSrc={ImageStore.panelHocMai} />
             <Work />
             <Work />
-            <Work imgSrc='../images/traveloka.png' />
+            <Work imgSrc={ImageStore.panelTraveloka} />
             <Link className='section3-btn-see-more' to='/case-study'>
               <div className='custom-button'>See more</div>
             </Link>
@@ -95,11 +96,6 @@ export default AppStoreOptimisation;
 const Bubble = ({ content, clazzColumn }: any) => {
   return (
     <div className={`section2-bubble`}>
-      <img
-        className='section2-bubble-background'
-        src='images/Shape-WCWD-1.png'
-        alt=''
-      />
       <div className='section2-bubble-content'>{content}</div>
       <div className={`section2-bubble-column ${clazzColumn}`}></div>
     </div>

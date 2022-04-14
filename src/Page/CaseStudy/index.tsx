@@ -36,10 +36,10 @@ const CaseStudyPage = () => {
 
       <div className='section3'>
         <div className='wrapper'>
-          <CaseStudyItem imgSrc={ImageStore.caseStudyHocMai} />
+          <CaseStudyItem imgSrc={ImageStore.panelHocMai} />
           <CaseStudyItem />
           <CaseStudyItem />
-          <CaseStudyItem imgSrc={ImageStore.caseStudyTraveloka} />
+          <CaseStudyItem imgSrc={ImageStore.panelTraveloka} />
           <CaseStudyItem />
           <CaseStudyItem />
         </div>
