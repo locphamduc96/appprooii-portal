@@ -1,20 +1,22 @@
+import ImageStore from '../../Store/ImageStore';
+
 const TEAM_INFO = [
-  { imgUrl: 'images/teammember1.png', name: 'Mr. Binh', role: 'Chair man' },
-  { imgUrl: 'images/teammember1.png', name: 'Mr. Duong', role: 'C.E.O' },
+  { imgUrl: ImageStore.aboutUsMember1, name: 'Mr. Binh', role: 'Chair man' },
+  { imgUrl: ImageStore.aboutUsMember1, name: 'Mr. Duong', role: 'C.E.O' },
   {
-    imgUrl: 'images/teammember1.png',
+    imgUrl: ImageStore.aboutUsMember1,
     name: 'Mr. Hien',
     role: 'Chief of Finance',
   },
 
   {
-    imgUrl: 'images/teammember1.png',
+    imgUrl: ImageStore.aboutUsMember1,
     name: 'Mr. Vinh',
     role: 'Head of Growth',
   },
-  { imgUrl: 'images/teammember1.png', name: 'Mr. Tuan', role: 'B.D. Manager' },
+  { imgUrl: ImageStore.aboutUsMember1, name: 'Mr. Tuan', role: 'B.D. Manager' },
   {
-    imgUrl: 'images/teammember1.png',
+    imgUrl: ImageStore.aboutUsMember1,
     name: 'Mr. Duong',
     role: 'Creative Manager',
   },

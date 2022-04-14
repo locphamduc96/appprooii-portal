@@ -1,6 +1,7 @@
 // import { a } from 'react-router-dom';
 
 import { Link } from 'react-router-dom';
+import ImageStore from '../Store/ImageStore';
 
 const NavBar = () => {
   return (
@@ -8,7 +9,7 @@ const NavBar = () => {
       <div className='navbar-container'>
         <Link to='/'>
           <img
-            src='images/Approi-logo.png'
+            src={ImageStore.approiLogo}
             loading='lazy'
             alt=''
             className='logo-image'

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import ImageStore from '../../Store/ImageStore';
 import BadgeItem from './BadgeItem';
 
 const Section3 = () => {
@@ -7,7 +8,7 @@ const Section3 = () => {
       <div className='section3-left'>
         <div className='section3-left-title'>
           <img
-            src='images/Layer-36.png'
+            src={ImageStore.headerBackground}
             loading='lazy'
             alt=''
             className='section3-left-title-background'
@@ -34,7 +35,7 @@ const Section3 = () => {
       </div>
       <img
         className='section3-right-image'
-        src='images/iconstr-2.png'
+        src={ImageStore.serviceSection3Image}
         alt=''
         loading='lazy'
       />

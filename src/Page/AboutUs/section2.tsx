@@ -1,3 +1,5 @@
+import ImageStore from "../../Store/ImageStore";
+
 const Section2 = () => {
   return (
     <div className='section2'>
@@ -15,10 +17,10 @@ const Section2 = () => {
         </div>
         <div className='section2-our-genes-desc'>
           <img
-            src='images/aboutus-page.png'
+            src={ImageStore.aboutUsBanner}
             loading='lazy'
-            sizes='(max-width: 479px) 100vw, (max-width: 767px) 83vw, 588px'
-            srcSet='images/aboutus-page-p-500.png 500w, images/aboutus-page-p-800.png 800w, images/aboutus-page-p-1080.png 1080w, images/aboutus-page.png 1557w'
+            width={588}
+            height={192}
             alt=''
             className='section2-our-genes-img'
           ></img>

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import ImageStore from '../../Store/ImageStore';
 
 const Section2 = () => {
   const [isLeftBoardOpen, setLeftBoardOpen] = useState<boolean>(false);
@@ -21,7 +22,7 @@ const Section2 = () => {
           // style={{ opacity: 0 }}
         >
           <img
-            src='images/Layer-36.png'
+            src={ImageStore.headerBackground}
             loading='lazy'
             alt=''
             className='section2-title-background'
@@ -40,7 +41,7 @@ const Section2 = () => {
               className={`section2-marketing-icon ${
                 isLeftBoardOpen ? 'open' : ''
               }`}
-              src='images/icon-Mar-12x.png'
+              src={ImageStore.iconMarketing}
               alt=''
               loading='lazy'
             />
@@ -71,7 +72,7 @@ const Section2 = () => {
                 isLeftBoardOpen ? 'flip' : ''
               }`}
               onClick={hanldeClickLeftBoardArrow}
-              src='images/arrow.png'
+              src={ImageStore.arrow}
               loading='lazy'
               alt=''
             />
@@ -86,7 +87,7 @@ const Section2 = () => {
               className={`section2-marketing-icon ${
                 isRightBoardOpen ? 'open' : ''
               }`}
-              src='images/icon-chess.png'
+              src={ImageStore.iconChess}
               alt=''
               loading='lazy'
             />
@@ -118,7 +119,7 @@ const Section2 = () => {
                 isRightBoardOpen ? 'flip' : ''
               }`}
               onClick={hanldeClickRightBoardArrow}
-              src='images/arrow.png'
+              src={ImageStore.arrow}
               loading='lazy'
               data-w-id='61ab8e0b-9cde-a26f-3b73-7717a364b9e1'
               alt=''
@@ -142,7 +143,7 @@ const LeftBoardOpenContent = ({ isOpen }: any) => {
     <div className={`section2-marketing-extend ${isOpen ? 'open' : ''}`}>
       <img
         className='section2-marketing-extent-img'
-        src='images/shape2.png'
+        src={ImageStore.homeBannerBackground}
         alt=''
       />
       <div className='section2-marketing-extend-wrap'>
@@ -166,7 +167,7 @@ const RightBoardOpenContent = ({ isOpen }: any) => {
     <div className={`section2-marketing-extend ${isOpen ? 'open' : ''}`}>
       <img
         className='section2-marketing-extend-img'
-        src='images/shape2.png'
+        src={ImageStore.homeBannerBackground}
         alt=''
       />
 
@@ -189,14 +190,14 @@ const BlockContent = ({ content }: any) => {
   return (
     <div className='section2-marketing-block'>
       <img
-        src='images/Rounded-Rectangle--2.png'
+        src={ImageStore.blockBackground}
         alt=''
         className='section2-marketing-block-background'
       />
       <p className='section2-marketing-block-title'>{content}</p>
       <img
         className='section2-marketing-block-arrow'
-        src='images/arrow_1.png'
+        src={ImageStore.arrow1}
         loading='lazy'
         alt=''
       />

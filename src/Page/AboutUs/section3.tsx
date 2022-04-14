@@ -1,13 +1,15 @@
+import ImageStore from "../../Store/ImageStore";
+
 const Section3 = () => {
   return (
     <div className='section3'>
       <img
         className='section3-triangle-image'
-        src='images/tamgiac.png'
+        src={ImageStore.aboutUsTriange}
         loading='lazy'
         id='w-node-_53599fae-66c4-6470-6ca0-42e481fa0c05-7cf94638'
-        sizes='(max-width: 991px) 100vw, 532px'
-        srcSet='images/tamgiac-p-500.png 500w, images/tamgiac.png 532w'
+        // sizes='(max-width: 991px) 100vw, 532px'
+        // srcSet='images/tamgiac-p-500.png 500w, images/tamgiac.png 532w'
         alt=''
       ></img>
       <div className='section3-content section3-product-market'>

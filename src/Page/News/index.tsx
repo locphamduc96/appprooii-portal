@@ -1,5 +1,5 @@
-import { useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
+import ImageStore from '../../Store/ImageStore';
 
 const NewsPage = () => {
   return (
@@ -11,20 +11,14 @@ const NewsPage = () => {
           infiniteLoop={true}
           showThumbs={false}
         >
-          <img className='news-carousel' src='images/news-banner.png' alt='' />
-          <img className='news-carousel' src='images/news-banner.png' alt='' />
-          <img className='news-carousel' src='images/news-banner.png' alt='' />
+          <img className='news-carousel' src={ImageStore.newsBanner} alt='' />
+          <img className='news-carousel' src={ImageStore.newsBanner} alt='' />
+          <img className='news-carousel' src={ImageStore.newsBanner} alt='' />
         </Carousel>
       </div>
       <div className='section2'>
         <div className='wrapper'>
           <div className='section2-list-new'>
-            {/* <News imgSrc='images/news-1.png' time='August 05, 2021' />
-            <News />
-            <News />
-            <News />
-            <News />
-            <News /> */}
             {NEWS_ARR.map((news) => {
               return (
                 <News
@@ -60,7 +54,6 @@ const News = ({ imgSrc, title, time }: any) => {
 };
 
 const Pagination = ({ startIndex, endIndex, currentIndex }: any) => {
-
   // const [currentValue, setCurrentValue] = useState<number>(2);
 
   // const handleClickPaginationNumber =(value: number) => {
@@ -99,7 +92,7 @@ const Pagination = ({ startIndex, endIndex, currentIndex }: any) => {
 
 const NEWS_ARR = [
   {
-    imgSrc: 'images/news-1.png',
+    imgSrc: ImageStore.newsImage,
     time: 'August 05, 2021',
     title: 'How to build a brand for mobile apps',
   },

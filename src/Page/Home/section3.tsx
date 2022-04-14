@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import ImageStore from '../../Store/ImageStore';
 
 const Section3 = () => {
   return (
@@ -9,7 +10,7 @@ const Section3 = () => {
           // style={{ opacity: 0 }}
         >
           <img
-            src='images/Layer-36.png'
+            src={ImageStore.headerBackground}
             loading='lazy'
             alt=''
             className='section3-title-background'
@@ -19,18 +20,18 @@ const Section3 = () => {
           </div>
         </div>
         <div className='section3-client'>
-          <ClientImage src='images/wetv.jpg' />
-          <ClientImage src='images/mb.jpg' />
-          <ClientImage src='images/tp.jpg' />
-          <ClientImage src='images/baemin.jpg' />
-          <ClientImage src='images/shopee.jpg' />
-          <ClientImage src='images/travel.jpg' />
-          <ClientImage src='images/fun.jpg' />
-          <ClientImage src='images/edu.jpg' />
-          <ClientImage src='images/meg.jpg' />
-          <ClientImage src='images/spo.jpg' />
-          <ClientImage src='images/gal.jpg' />
-          <ClientImage src='images/vtc.jpg' />
+          <ClientImage src={ImageStore.wetvImg} />
+          <ClientImage src={ImageStore.mbImg} />
+          <ClientImage src={ImageStore.tpImg} />
+          <ClientImage src={ImageStore.baeminImg} />
+          <ClientImage src={ImageStore.shopeeImg} />
+          <ClientImage src={ImageStore.travelImg} />
+          <ClientImage src={ImageStore.funImg} />
+          <ClientImage src={ImageStore.eduImg} />
+          <ClientImage src={ImageStore.megImg} />
+          <ClientImage src={ImageStore.spoImg} />
+          <ClientImage src={ImageStore.galImg} />
+          <ClientImage src={ImageStore.vtcImg} />
         </div>
         <div className='section3-bottom'>
           <Link to='/case-study' className='custom-button'>
@@ -43,7 +44,7 @@ const Section3 = () => {
           // style={{ opacity: 0 }}
         >
           <img
-            src='images/Layer-36.png'
+            src={ImageStore.headerBackground}
             loading='lazy'
             alt=''
             className='section3-title-background'
@@ -53,10 +54,10 @@ const Section3 = () => {
           </div>
         </div>
         <div className='section3-partner'>
-          <PartnerImage src='images/fb.jpg' />
-          <PartnerImage src='images/gg.jpg' />
-          <PartnerImage src='images/tik.jpg' />
-          <PartnerImage src='images/app.jpg' />
+          <PartnerImage src={ImageStore.fbPartner} />
+          <PartnerImage src={ImageStore.ggPartner} />
+          <PartnerImage src={ImageStore.tikPartner} />
+          <PartnerImage src={ImageStore.appPartner} />
         </div>
       </div>
     </div>
@@ -65,14 +66,19 @@ const Section3 = () => {
 
 export default Section3;
 
-const ClientImage = ({ src }: any) => {
+const ClientImage = ({ src: imgSrc }: any) => {
   return (
-    <img src={src} loading='lazy' alt='' className='section3-client-image' />
+    <img src={imgSrc} loading='lazy' alt='' className='section3-client-image' />
   );
 };
 
-const PartnerImage = ({ src }: any) => {
+const PartnerImage = ({ src: imgSrc }: any) => {
   return (
-    <img src={src} loading='lazy' alt='' className='section3-partner-image' />
+    <img
+      src={imgSrc}
+      loading='lazy'
+      alt=''
+      className='section3-partner-image'
+    />
   );
 };
