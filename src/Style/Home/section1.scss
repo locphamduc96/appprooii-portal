@@ -2,7 +2,7 @@
     .section1 {
         position: relative;
 
-        height: 80vh;
+        height: 800px;
 
         background-image: url(../../assets/images/BG_Header-small.jpg.png);
         background-size: cover;
@@ -13,10 +13,11 @@
         align-items: center;
 
         &-text {
-            padding-top: 18vh;
+            position: absolute;
+            top: 380px;
 
             display: flex;
-            justify-content: center;
+            justify-content: center; 
             align-items: center;
             column-gap: 120px;
 
