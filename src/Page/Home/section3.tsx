@@ -15,8 +15,9 @@ const Section3 = () => {
             alt=''
             className='section3-title-background'
           />
-          <div className='section3-title-text'>
-            Some of <span className='black'>our clients</span>
+          <div className='title-text'>
+            <span className="green">Some of </span>
+            our clients
           </div>
         </div>
         <div className='section3-client'>
@@ -49,8 +50,9 @@ const Section3 = () => {
             alt=''
             className='section3-title-background'
           />
-          <div className='section3-title-text'>
-            Some of <span className='black'>our partner</span>
+          <div className='title-text'>
+            <span className="green">Some of </span>
+            our partner
           </div>
         </div>
         <div className='section3-partner'>

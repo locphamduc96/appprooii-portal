@@ -7,8 +7,8 @@ const Footer = () => {
       <div className='wrapper'>
         {/* FOOTER SUBSCRIBE EMAIL */}
         <div className='footer-subscribe'>
-          <div className='footer-subscribe-text'>Do you want to receive</div>
-          <div className='footer-subscribe-text black'>
+          <div className='title-text'><span className="green">Do you want to receive</span></div>
+          <div className='title-text'>
             daily growth hacking tip?
           </div>
           <div className='footer-subscribe-form'>

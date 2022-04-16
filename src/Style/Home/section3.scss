@@ -8,6 +8,11 @@
         display: flex;
         justify-content: center;
 
+
+        @include media-m(xl) {
+            margin-top: calc(100px * 0.6667);
+        }
+
         &-title {
             position: relative;
             width: fit-content;
@@ -15,6 +20,10 @@
 
             &.partner {
                 margin-top: 100px;
+
+                @include media-m(xl) {
+                    margin-top: calc(100px * 0.6667);
+                }
             }
         }
 
@@ -22,20 +31,6 @@
             position: absolute;
             top: -20px;
             left: -50px;
-        }
-
-        &-title-text {
-            position: relative;
-
-            font-family: $font-family;
-            font-size: 56px;
-            font-weight: 800;
-
-            color: $secondary-color;
-
-            .black {
-                color: $primary-color;
-            }
         }
 
         &-client {
@@ -52,12 +47,17 @@
 
             &-image {
                 width: 180px;
-                height: auto;
+                height: 90px;
 
                 flex-basis: 25%;
 
                 filter: grayscale(1);
                 transition: filter 0.3s ease;
+
+                @include media-m(xl) {
+                    width: calc(180px * 0.6667);
+                    height: calc(90px * 0.6667);
+                }
 
                 &:hover {
                     filter: grayscale(0);
@@ -89,14 +89,24 @@
 
             width: 100%;
 
+            @include media-m(xl) {
+                margin-top: calc(20px * 0.6667);
+                margin-bottom: calc(100px * 0.6667);
+            }
+
             &-image {
                 width: 250px;
-                height: auto;
+                height: 125px;
 
                 flex-basis: 25%;
 
                 filter: grayscale(1);
                 transition: filter 0.3s ease;
+
+                @include media-m(xl) {
+                    width: calc(250px * 0.6667);
+                    height: calc(125px * 0.6667);
+                }
 
                 &:hover {
                     filter: grayscale(0);

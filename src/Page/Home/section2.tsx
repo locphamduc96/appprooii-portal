@@ -27,8 +27,8 @@ const Section2 = () => {
             alt=''
             className='section2-title-background'
           />
-          <div className='section2-title-text'>
-            <div className='section2-title-text-top'>What can we do for</div>
+          <div className='section2-title-text title-text'>
+            <div className='section2-title-text-top green'>What can we do for</div>
             <div className='section2-title-text-bottom'>
               your business growth?
             </div>
