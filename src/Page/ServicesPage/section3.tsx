@@ -33,12 +33,13 @@ const Section3 = () => {
           <BadgeItem title={['Marketing', <br />, 'Automation']} />
         </div>
       </div>
-      <img
+      <div className="section3-right-image"></div>
+      {/* <img
         className='section3-right-image'
         src={ImageStore.serviceSection3Image}
         alt=''
         loading='lazy'
-      />
+      /> */}
     </div>
   );
 };

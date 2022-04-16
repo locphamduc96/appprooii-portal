@@ -1,0 +1,24 @@
+$sm: 577px; // 576
+// Small tablets (portrait view)
+$md: 769px; // 768 
+// Tablets and small desktops
+$lg: 993px; // 992
+//
+$xl: 1281px; // 1280 
+
+$breakpoints: ( //
+    sm: $sm,
+    md: $md,
+    lg: $lg,
+    xl: $xl,
+);
+
+@mixin media-m($keys...) {
+    @each $key in $keys {
+        @media (max-width: map-get($breakpoints, $key)) {
+            @content
+        }
+    }
+}
+
+;

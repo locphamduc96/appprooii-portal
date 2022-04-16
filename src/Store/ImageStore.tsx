@@ -43,7 +43,21 @@ import caseStudyIconOptimise from '../assets/images/optimize-1.png';
 import newsBanner from '../assets/images/news-banner.png';
 import newsImage from '../assets/images/news-1.png';
 
+import contactUsPanelBackground from '../assets/images/Rounded-Rectangle-1-copy.png';
 
+import emailIconGreen from '../assets/images/mail-contact.png';
+import phoneIconGreen from '../assets/images/phonecontact.png';
+import addressIconGreen from '../assets/images/add-contact.png';
+
+import addressIconWhite from '../assets/images/address.png';
+import phoneIconWhite from '../assets/images/phone.png';
+
+import zaloIcon from '../assets/images/zalo-footer.png';
+import facebookIcon1 from '../assets/images/fb-footer.png';
+import facebookIcon2 from '../assets/images/fb-sharepost.png';
+import linkedinIcon from '../assets/images/linkedin-footer.png';
+
+import footerVerticalLine from '../assets/images/footer-line.png';
 
 const ImageStore = {
   approiLogo,
@@ -90,6 +104,22 @@ const ImageStore = {
 
   newsBanner,
   newsImage,
+
+  contactUsPanelBackground,
+
+  emailIconGreen,
+  phoneIconGreen,
+  addressIconGreen,
+
+  addressIconWhite,
+  phoneIconWhite,
+
+  zaloIcon,
+  facebookIcon1,
+  facebookIcon2,
+  linkedinIcon,
+
+  footerVerticalLine
 };
 
 export default ImageStore;

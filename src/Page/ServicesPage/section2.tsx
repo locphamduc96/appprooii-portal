@@ -5,12 +5,13 @@ import BadgeItem from './BadgeItem';
 const Section2 = () => {
   return (
     <div className='section2'>
-      <img
+      <div className='section2-left-image'></div>
+      {/* <img
         className='section2-left-image'
         src={ImageStore.serviceSection2Image}
         alt=''
         loading='lazy'
-      />
+      /> */}
       <div className='section2-right'>
         <div className='section2-right-title'>
           <img

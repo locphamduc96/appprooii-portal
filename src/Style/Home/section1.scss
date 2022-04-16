@@ -2,7 +2,7 @@
     .section1 {
         position: relative;
 
-        height: 800px;
+        height: 913px;
 
         background-image: url(../../assets/images/BG_Header-small.jpg.png);
         background-size: cover;
@@ -12,9 +12,16 @@
         justify-content: center;
         align-items: center;
 
+        // transition: all 0.3s ease;
+
+        @include media-m(xl) {
+            height: 609px;
+            background-image: url(../../assets/images/BG_Header-small.jpg-p-1600.png);
+        }
+
         &-text {
             position: absolute;
-            top: 380px;
+            top: 430px;
 
             display: flex;
             justify-content: center; 
@@ -27,6 +34,13 @@
             text-transform: uppercase;
 
             color: #0a2d27;
+
+            // transition: all 0.3s ease;
+
+            @include media-m(xl) {
+                top: 290px;
+                font-size: 43px;
+            }
         }
     }
 }

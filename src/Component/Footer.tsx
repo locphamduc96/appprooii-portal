@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import ImageStore from '../Store/ImageStore';
 
 const Footer = () => {
   return (
@@ -50,17 +51,17 @@ const Footer = () => {
               <div className='footer-info-text-contact'>CONTACT US</div>
               <div className='footer-info-channel'>
                 <img
-                  src='images/zalo-footer.png'
+                  src={ImageStore.zaloIcon}
                   alt=''
                   className='footer-info-channel-icon'
                 />
                 <img
-                  src='images/in-footer.png'
+                  src={ImageStore.linkedinIcon}
                   alt=''
                   className='footer-info-channel-icon'
                 />
                 <img
-                  src='images/fb-footer.png'
+                  src={ImageStore.facebookIcon1}
                   alt=''
                   className='footer-info-channel-icon'
                 />
@@ -68,32 +69,32 @@ const Footer = () => {
             </div>
             <img
               className='footer-info-top-seperator'
-              src='images/footer-line.png'
+              src={ImageStore.footerVerticalLine}
               loading='lazy'
               alt=''
             />
             <div className='footer-info-top-right'>
               <div className='footer-info-detail'>
                 <img
-                  src='images/address.png'
-                  alt=''
                   className='footer-address-icon'
+                  src={ImageStore.addressIconWhite}
+                  alt=''
                 />
                 <p>infor@approi.co</p>
               </div>
               <div className='footer-info-detail'>
                 <img
-                  src='images/phone.png'
-                  alt=''
                   className='footer-phone-icon'
+                  src={ImageStore.phoneIconWhite}
+                  alt=''
                 />
                 <p>(+84) 789 996 688</p>
               </div>
               <div className='footer-info-detail'>
                 <img
-                  src='images/address.png'
-                  alt=''
                   className='footer-address-icon'
+                  src={ImageStore.addressIconWhite}
+                  alt=''
                 />
                 <p>
                   No.28, B2 Street, Sala Urban, An Loi Dong Ward, District 2,

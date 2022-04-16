@@ -1,0 +1,11 @@
+.title-text {
+    font-size: 56px;
+    font-weight: 800;
+    text-transform: uppercase;
+
+    color: $primary-color;
+
+    .green {
+        color: $secondary-color;
+    }
+}

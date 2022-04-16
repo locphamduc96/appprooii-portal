@@ -6,6 +6,10 @@ body {
     color: #fff;
 }
 
+* {
+    transition: all 0.3s ease;
+}
+
 .wrapper {
     position: relative;
 

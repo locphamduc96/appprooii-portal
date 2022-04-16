@@ -1,24 +1,31 @@
 .contact-us {
     .section1 {
         width: 100%;
-        height: 800px;
+        height: 913px;
 
         background-image: url(../../assets/images/contact_BG_Header-small.png);
         background-size: cover;
         background-position: top center;
         background-repeat: no-repeat;
+
+        @include media-m(xl) {
+            height: 609px;
+            background-image: url(../../assets/images/contact_BG_Header-small-p-1600.png);
+        }
     }
 
     .section2 {
         position: relative;
 
         width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 100px;
+        margin: -200px auto 100px;
 
         display: flex;
         justify-content: center;
+
+        @include media-m(xl) {
+            margin: -150px auto 80px;
+        }
 
         &-title {
             position: relative;
@@ -55,10 +62,21 @@
             display: flex;
             align-items: center;
             gap: 100px;
+
+            @include media-m(xl) {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
         }
 
         &-form {
-            width: 500px;
+            flex: 1 1 auto;
+            // width: 500px;
+
+            @include media-m(xl) {
+                width: 550px;
+            }
 
             &-element {
                 padding-bottom: 20px;
@@ -122,18 +140,29 @@
             width: 600px;
             height: 308px;
 
-            background-image: url(../../assets/images/Rounded-Rectangle-1-copy.png);
-            background-size: cover;
-            background-repeat: no-repeat;
+            // flex: 0 0 600px 308px;
 
             padding-top: 40px;
             padding-left: 120px;
+
+            @include media-m(xl) {
+                margin-left: -20px;
+            }
+
+            &-background{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 585px;
+                height: 301px;
+            }
 
             &-element {
                 display: flex;
                 align-items: flex-start;
                 gap: 20px;
 
+                position: relative;
                 margin-bottom: 20px;
 
                 &-icon {

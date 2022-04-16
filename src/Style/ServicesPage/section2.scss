@@ -8,19 +8,29 @@
         align-items: center;
         justify-content: space-between;
 
+        margin-top: -200px;
         margin-bottom: 200px;
+
+        @include media-m(xl) {
+            margin: -150px auto 150px;
+        }
 
         &-left-image {
             position: relative;
-            grid-area: Area;
             width: 600px;
             height: 450px;
+
+            background-image: url(../../assets/images/iconstr2x.png);
+            background-position: right center;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
 
         &-right {
             position: relative;
-            width: 45%;
-            margin-right: 15%;
+            width: 760px;
+            margin-right: auto;
+            flex: 0 0 760px;
 
             &-title {
                 position: relative;

@@ -12,14 +12,25 @@
 
         &-right-image {
             position: relative;
-            grid-area: Area;
             width: 600px;
             height: 450px;
+
+            background-image: url(../../assets/images/iconstr-2.png);
+            background-position: left center;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
 
         &-left {
-            width: 45%;
-            margin-left: 20%;
+            position: relative;
+            width: 760px;
+            margin-left: auto;
+
+            flex: 0 0 760px;
+
+            @include media-m(xl) {
+                margin-left: 20px;
+            }
 
             &-title {
                 position: relative;

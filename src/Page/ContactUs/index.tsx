@@ -1,3 +1,5 @@
+import ImageStore from '../../Store/ImageStore';
+
 const ContactUsPage = () => {
   return (
     <div className='contact-us'>
@@ -7,7 +9,7 @@ const ContactUsPage = () => {
           <div className='section2-title'>
             <img
               className='section2-title-img'
-              src='../images/Layer-36.png'
+              src={ImageStore.headerBackground}
               alt=''
             />
             <p className='title'>Get in touch</p>
@@ -50,10 +52,15 @@ const ContactUsPage = () => {
               </form>
             </div>
             <div className='section2-info'>
+              <img
+                className='section2-info-background'
+                src={ImageStore.contactUsPanelBackground}
+                alt=''
+              />
               <div className='section2-info-element'>
                 <img
                   className='section2-info-element-icon'
-                  src='images/mail-contact.png'
+                  src={ImageStore.emailIconGreen}
                   alt=''
                 />
                 <p className='section2-info-element-text'>infor@approi.co</p>
@@ -61,7 +68,7 @@ const ContactUsPage = () => {
               <div className='section2-info-element'>
                 <img
                   className='section2-info-element-icon'
-                  src='images/phonecontact.png'
+                  src={ImageStore.phoneIconGreen}
                   alt=''
                 />
                 <p className='section2-info-element-text'>(+84) 789 996 688</p>
@@ -69,7 +76,7 @@ const ContactUsPage = () => {
               <div className='section2-info-element'>
                 <img
                   className='section2-info-element-icon'
-                  src='images/add-contact.png'
+                  src={ImageStore.addressIconGreen}
                   alt=''
                 />
                 <p className='section2-info-element-text'>
