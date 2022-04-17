@@ -12,6 +12,11 @@
         width: 250px;
         height: 192px;
 
+        @include media-m(xl) {
+            width: calc(250px * 0.6667);
+            height: calc(192px * 0.6667);                
+        }
+
         &-image {
             position: absolute;
             height: auto;
@@ -27,12 +32,28 @@
             font-weight: 800;
 
             color: $black-color;
+
+            @include media-m(xl) {
+                top: calc(40px * 0.6667);              
+                left: calc(20px * 0.6667);  
+                font-size: calc(20px * 0.6667);
+                line-height: calc(25px * 0.6667);
+            }
         }
 
         &-arrow {
             position: absolute;
             top: 100px;
             right: 60px;
+            width: 47px;
+            height: 19px;
+
+            @include media-m(xl) {
+                top: calc(100px * 0.6667);                
+                right: calc(60px * 0.6667);
+                width: calc(47px * 0.6667);
+                height: calc(19px * 0.6667);
+            }
         }
     }
 }

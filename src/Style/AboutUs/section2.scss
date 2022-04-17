@@ -9,7 +9,7 @@
         justify-content: center;
 
         @include media-m(xl) {
-            margin: -150px auto 50px;
+            margin: calc(-200px * 0.6667) auto calc(50px * 0.6667);
         }
 
         &-text {
@@ -22,11 +22,20 @@
             line-height: 26px;
 
             color: $primary-color;
+
+            @include media-m(xl) {
+                width: calc(580px * 0.6667);                
+                font-size: calc(18px * 0.6667);
+            }
         }
 
         &-our-genes {
             position: relative;
             margin-top: 20px;
+
+            @include media-m(xl) {
+                margin-top: calc(20px * 0.6667);                
+            }
 
             &-title {
                 position: relative;
@@ -40,6 +49,12 @@
 
                 color: $secondary-color;
 
+                @include media-m(xl) {
+                    font-size: calc(38px * 0.6667);
+                    line-height: calc(44px * 0.6667);
+                    margin-top: calc(20px * 0.6667);
+                }
+
                 .black {
                     color: $primary-color;
                 }
@@ -47,12 +62,23 @@
 
             &-img {
                 position: relative;
+                width: 588px;
+                height: 192px;
+                
+                @include media-m(xl) {
+                    width: calc(588px * 0.6667);                
+                    height: calc(192px * 0.6667);
+                }
             }
 
             &-desc {
                 margin-top: 10px;
                 position: relative;
                 text-align: justify;
+
+                @include media-m(xl) {
+                    margin-top: calc(10px * 0.6667)                
+                };
 
                 p {
                     position: absolute;
@@ -64,6 +90,13 @@
                     line-height: 26px;
 
                     color: $primary-color;
+
+                    @include media-m(xl) {
+                        top: calc(35px * 0.6667);                
+                        left: calc(65px * 0.6667);
+                        font-size: calc(18px * 0.6667);
+                        line-height: calc(26px * 0.6667);
+                    }
                 }
             }
         }

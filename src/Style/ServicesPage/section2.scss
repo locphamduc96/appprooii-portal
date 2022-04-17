@@ -12,7 +12,8 @@
         margin-bottom: 200px;
 
         @include media-m(xl) {
-            margin: -150px auto 150px;
+            height: calc(500px * 0.6667);
+            margin: calc(-200px * 0.6667) auto calc(200px * 0.6667);
         }
 
         &-left-image {
@@ -24,13 +25,25 @@
             background-position: right center;
             background-size: cover;
             background-repeat: no-repeat;
+
+            @include media-m(xl) {
+                background-image: url(../../assets/images/iconstr2x-p-1600.png);
+                width: calc(600px * 0.6667);                
+                height: calc(450px * 0.6667);
+            }
         }
 
         &-right {
             position: relative;
             width: 760px;
+            margin-left: 10%;
             margin-right: auto;
             flex: 0 0 760px;
+
+            @include media-m(xl) {
+                width: calc(760px * 0.6667);                
+                flex: 0 0 calc(760px * 0.6667)
+            }
 
             &-title {
                 position: relative;
@@ -65,6 +78,12 @@
                 line-height: 30px;
 
                 color: $primary-color;
+
+                @include media-m(xl) {
+                    padding: calc(20px * 0.6667) auto;                
+                    font-size: calc(20px * 0.6667);
+                    line-height: calc(30px * 0.6667);
+                }
             }
 
             &-list-badge {
@@ -73,6 +92,10 @@
                 display: flex;
                 align-items: flex-start;
                 row-gap: 20px;
+
+                @include media-m(xl) {
+                    margin-top: calc(50px * 0.6667);                
+                }
             }
         }
     }

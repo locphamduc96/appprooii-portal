@@ -6,6 +6,21 @@
 
     color: $primary-color;
 
+    &-background {
+        position: absolute;
+        top: -20px;
+        left: -50px;
+        width: 131px;
+        height: 90px;
+
+        @include media-m(xl) {
+            top: calc(-20px * 0.6667);
+            left: calc(-50px * 0.6667);
+            width: calc(131px * 0.6667);
+            height: calc(90px * 0.6667);
+        }
+    }
+
     .green {
         color: $secondary-color;
     }

@@ -20,7 +20,7 @@
         margin: -200px auto 0;
 
         @include media-m(xl) {
-            margin: -150px auto 0;
+            margin: calc(-200px * 0.6667) auto 0;
         }
 
         .wrapper {
@@ -33,7 +33,7 @@
             gap: 30px;
 
             @include media-m(xl) {
-                gap: 0px;
+                gap: calc(30px * 0.6667);
             }
         }
 
@@ -53,6 +53,13 @@
 
             transition: transform 0.3s ease;
 
+            @include media-m(xl) {
+                width: calc(200px * 0.6667);
+                height: calc(259px * 0.6667);
+                padding-top: calc(30px * 0.6667);
+                padding-left: calc(60px * 0.6667);
+            }
+
             &.active {
                 transform: translate(0, -80px);
             }
@@ -66,11 +73,23 @@
                 text-align: left;
 
                 color: $black-color;
+
+                @include media-m(xl) {
+                    font-size: calc(18px * 0.6667);                
+                    line-height: calc(19px * 0.6667);
+                }
             }
 
             &-img {
                 position: relative;
                 margin-left: 5px;
+                width: 93px;
+                height: 94px;
+
+                @include media-m(xl) {
+                    width: calc(93px * 0.6667);
+                    height: calc(94px * 0.6667);
+                }
             }
         }
     }
@@ -82,12 +101,20 @@
 
         display: flex;
         justify-content: center;
+        
+        @include media-m(xl) {
+            margin: calc(100px * 0.6667) auto;                
+        }
 
         .wrapper {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
+
+            @include media-m(xl) {
+                gap: calc(20px * 0.6667) auto;                
+            }
         }
     }
 
@@ -98,9 +125,19 @@
         background-color: #e3f7f3;
         border-radius: 30px;
 
+        @include media-m(xl) {
+            width: calc(334px * 0.6667);                
+            height: calc(370px * 0.6667);
+        }
+
         &-img {
             width: 334px;
             height: 370px;
+
+            @include media-m(xl) {
+                width: calc(334px * 0.6667);                
+                height: calc(370px * 0.6667);
+            }
         }
     }
 }

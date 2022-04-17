@@ -24,37 +24,22 @@
         justify-content: center;
 
         @include media-m(xl) {
-            margin: -150px auto 80px;
+            margin: calc(-200px * 0.6667) auto calc(100px * 0.6667);
         }
 
-        &-title {
-            position: relative;
+        &-desc {
             margin-bottom: 40px;
 
-            &-img {
-                position: absolute;
-                top: -20px;
-                left: -50px;
-            }
+            font-size: 24px;
+            line-height: 28px;
+            font-weight: 600;
 
-            p {
-                position: relative;
-                font-size: 56px;
-                font-weight: 800;
+            color: $secondary-color;
 
-                color: $primary-color;
-
-                .green {
-                    color: $secondary-color;
-                }
-            }
-
-            p.desc {
-                font-size: 24px;
-                line-height: 28px;
-                font-weight: 600;
-
-                color: $secondary-color;
+            @include media-m(xl) {
+                margin-bottom: calc(40px * 0.6667);
+                font-size: calc(24px * 0.6667);
+                line-height: calc(28px * 0.6667);
             }
         }
 
@@ -64,28 +49,30 @@
             gap: 100px;
 
             @include media-m(xl) {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
+                gap: calc(100px * 0.6667);
             }
         }
 
         &-form {
             flex: 1 1 auto;
-            // width: 500px;
-
-            @include media-m(xl) {
-                width: 550px;
-            }
 
             &-element {
                 padding-bottom: 20px;
+
+                @include media-m(xl) {
+                    padding-bottom: calc(20px * 0.6667);
+                }
 
                 p {
                     font-size: 18px;
                     font-weight: bold;
                     color: $black-color;
                     margin-bottom: 5px;
+
+                    @include media-m(xl) {
+                        font-size: calc(18px * 0.6667);
+                        margin-bottom: calc(5px * 0.6667);
+                    }
                 }
 
                 input,
@@ -109,6 +96,15 @@
 
                     color: $black-color;
 
+                    @include media-m(xl) {
+                        padding: 0 calc(22px * 0.6667);
+                        height: calc(50px * 0.6667);
+                        border-radius: calc(30px * 0.6667);
+
+                        font-size: calc(16px * 0.6667);
+                        line-height: calc(22px * 0.6667);
+                    }
+
                     &:hover {
                         border-color: #3898EC;
                         box-shadow: 1px 1px 7px -1px rgba(22, 60, 93, 0.32);
@@ -126,6 +122,11 @@
                     padding: 16px 22px;
 
                     resize: none;
+
+                    @include media-m(xl) {
+                        height: calc(168px * 0.6667);
+                        padding: calc(16px * 0.6667) calc(22px * 0.6667);
+                    }
                 }
             }
 
@@ -146,15 +147,23 @@
             padding-left: 120px;
 
             @include media-m(xl) {
-                margin-left: -20px;
+                width: calc(600px * 0.6667);
+                height: calc(308px * 0.6667);
+                padding-top: calc(40px * 0.6667);
+                padding-left: calc(120px * 0.6667);
             }
 
-            &-background{
+            &-background {
                 position: absolute;
                 top: 0;
                 left: 0;
                 width: 585px;
                 height: 301px;
+
+                @include media-m(xl) {
+                    width: calc(585px * 0.6667);
+                    height: calc(301px * 0.6667);
+                }
             }
 
             &-element {
@@ -165,14 +174,52 @@
                 position: relative;
                 margin-bottom: 20px;
 
+                @include media-m(xl) {
+                    gap: calc(20px * 0.6667);
+                    margin-bottom: calc(20px * 0.6667);
+                }
+
                 &-icon {
-                    
+                    &.email {
+                        width: 30px;
+                        height: 24px;
+
+                        @include media-m(xl) {
+                            width: calc(30px * 0.6667);
+                            height: calc(24px * 0.6667);
+                        }
+                    }
+
+                    &.phone {
+                        width: 26px;
+                        height: 37px;
+
+                        @include media-m(xl) {
+                            width: calc(26px * 0.6667);
+                            height: calc(37px * 0.6667);
+                        }
+                    }
+
+                    &.address {
+                        width: 24px;
+                        height: 36px;
+
+                        @include media-m(xl) {
+                            width: calc(24px * 0.6667);
+                            height: calc(36px * 0.6667);
+                        }
+                    }
                 }
 
                 &-text {
                     font-size: 20px;
                     line-height: 28px;
                     color: $black-color;
+
+                    @include media-m(xl) {
+                        font-size: calc(20px * 0.6667);
+                        line-height: calc(28px * 0.6667);
+                    }
                 }
             }
 

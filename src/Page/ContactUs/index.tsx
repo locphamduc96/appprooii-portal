@@ -8,16 +8,18 @@ const ContactUsPage = () => {
         <div className='wrapper'>
           <div className='section2-title'>
             <img
-              className='section2-title-img'
+              className='title-text-background'
               src={ImageStore.headerBackground}
               alt=''
             />
-            <p className='title'>Get in touch</p>
-            <p className='desc'>
-              Growth hacking with us,
-              <br />
-              NOW!
-            </p>
+            <div className='title-text'>
+              Get in touch
+            </div>
+          </div>
+          <div className='section2-desc'>
+            Growth hacking with us,
+            <br />
+            NOW!
           </div>
           <div className='section2-content'>
             <div className='section2-form'>
@@ -59,7 +61,7 @@ const ContactUsPage = () => {
               />
               <div className='section2-info-element'>
                 <img
-                  className='section2-info-element-icon'
+                  className='section2-info-element-icon email'
                   src={ImageStore.emailIconGreen}
                   alt=''
                 />
@@ -67,7 +69,7 @@ const ContactUsPage = () => {
               </div>
               <div className='section2-info-element'>
                 <img
-                  className='section2-info-element-icon'
+                  className='section2-info-element-icon phone'
                   src={ImageStore.phoneIconGreen}
                   alt=''
                 />
@@ -75,7 +77,7 @@ const ContactUsPage = () => {
               </div>
               <div className='section2-info-element'>
                 <img
-                  className='section2-info-element-icon'
+                  className='section2-info-element-icon address'
                   src={ImageStore.addressIconGreen}
                   alt=''
                 />

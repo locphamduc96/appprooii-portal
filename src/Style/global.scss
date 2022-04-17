@@ -19,6 +19,10 @@ body {
 
     margin-left: 10vw;
     margin-right: 10vw;
+
+    @include media-m(xl) {
+        max-width: calc(1170px * 0.6667);                
+    }
 }
 
 .custom-button {

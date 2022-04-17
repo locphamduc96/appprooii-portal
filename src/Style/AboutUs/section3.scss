@@ -22,6 +22,10 @@
         -ms-grid-columns: 0.25fr 1fr minmax(532px, 1fr) 1fr 0.25fr;
         grid-template-columns: 0.25fr 1fr minmax(532px, 1fr) 1fr 0.25fr;
 
+        @include media-m(xl) {
+            margin: calc(60px * 0.6667) 0;                
+        }
+
         &-product-market {
             -ms-grid-row-align: center;
             align-self: center;
@@ -74,6 +78,11 @@
                 font-weight: 900;
 
                 color: $black-color;
+
+                @include media-m() {
+                    font-size: calc(24px * 0.6667);
+                    line-height: calc(24px * 0.6667);
+                }
             }
 
             &-title-quote {
@@ -85,6 +94,10 @@
                 color: #05a387;
 
                 margin-bottom: 20px;
+
+                @include media-m(xl) {
+                    font-size: calc(14px * 0.6667);                
+                }
             }
 
             &-desc {
@@ -94,6 +107,11 @@
                 text-align: start;
 
                 color: $primary-color;
+
+                @include media-m(xl) {
+                    font-size: calc(18px * 0.6667);   
+                    line-height: calc(24px * 0.6667);             
+                }
             }
         }
     }

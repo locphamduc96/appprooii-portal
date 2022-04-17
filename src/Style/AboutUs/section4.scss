@@ -14,6 +14,11 @@
 
         z-index: 0;
 
+        @include media-m(xl) {
+            margin: calc(-297px * 0.6667) auto 0;
+            height: calc(1346px * 0.6667);
+        }
+
         &-content {
             position: relative;
             top: 340px;
@@ -21,6 +26,10 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+
+            @include media-m(xl) {
+                top: calc(340px * 0.6667);                
+            }
         }
 
         &-title {
@@ -36,6 +45,13 @@
             font-weight: bold;
 
             color: $secondary-color;
+
+            @include media-m(xl) {
+                margin: calc(20px * 0.6667) auto;
+                padding: 64px 0;
+                font-size: calc(45px * 0.6667);           
+                line-height: calc(45px * 0.6667);
+            }
 
             .black {
                 color: $primary-color;
@@ -55,6 +71,11 @@
 
             grid-row-gap: 32px;
             grid-column-gap: 126px;
+
+            @include media-m(xl) {
+                grid-column-gap: calc(126xp * 0.6667);
+                grid-row-gap: calc(32px * 0.6667);
+            }
         }
 
         &-team-member {
@@ -65,6 +86,14 @@
                 max-width: 100%;
                 vertical-align: middle;
                 display: inline-block;
+
+                width: 250px;
+                height: 258px;
+
+                @include media-m(xl) {
+                    width: calc(250px * 0.6667);                
+                    height: calc(258px * 0.6667);
+                }
             }
 
             &-name {
@@ -74,6 +103,10 @@
                 text-align: center;
 
                 color: #0a2d27;
+                
+                @include media-m(xl) {
+                    font-size: calc(24px * 0.6667);                
+                }
             }
 
             &-role {
@@ -83,6 +116,10 @@
                 text-align: center;
 
                 color: #0a2d27;
+
+                @include media-m(xl) {
+                    font-size: calc(14px * 0.6667);                
+                }
             }
         }
     }
