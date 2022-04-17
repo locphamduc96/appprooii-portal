@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/appprooii-portal/static/css/main.c49b4c42.css",
-    "main.js": "/appprooii-portal/static/js/main.5a4ca588.js",
+    "main.css": "/appprooii-portal/static/css/main.75b32cf1.css",
+    "main.js": "/appprooii-portal/static/js/main.a856bc32.js",
     "static/media/iconstr-2.png": "/appprooii-portal/static/media/iconstr-2.d2720523a1f791ea7cf8.png",
     "static/media/iconstr2x.png": "/appprooii-portal/static/media/iconstr2x.557cfedcff4a63d12252.png",
     "static/media/footer_BG-1800px.jpg": "/appprooii-portal/static/media/footer_BG-1800px.1d352da84b108468540b.jpg",
     "static/media/news-banner.png": "/appprooii-portal/static/media/news-banner.ef928ea7aa2256d374c4.png",
+    "static/media/iconstr2x-p-1600.png": "/appprooii-portal/static/media/iconstr2x-p-1600.e2122b74b9e12f95f6b5.png",
     "static/media/puzzelsv1.png": "/appprooii-portal/static/media/puzzelsv1.d28986465de5555fe158.png",
     "static/media/svsub-BG_Header.jpg": "/appprooii-portal/static/media/svsub-BG_Header.fea22c05eb965539ca0b.jpg",
     "static/media/2svsub-BG_Header.jpg": "/appprooii-portal/static/media/2svsub-BG_Header.f483381b91598b53fda0.jpg",
@@ -26,6 +27,7 @@
     "static/media/teammember1.png": "/appprooii-portal/static/media/teammember1.3db5a8af23c6c49d6a17.png",
     "static/media/about_BG_Header-small-p-1600.png": "/appprooii-portal/static/media/about_BG_Header-small-p-1600.cc7e431d460987b6a168.png",
     "static/media/service_BG_Header-small-p-1600.png": "/appprooii-portal/static/media/service_BG_Header-small-p-1600.c911ea607d0ccb8c6ccd.png",
+    "static/media/2svsub-BG_Headeraaa-p-1080.png": "/appprooii-portal/static/media/2svsub-BG_Headeraaa-p-1080.1a0559ff32ff6022d016.png",
     "static/media/shape-text-team.jpg": "/appprooii-portal/static/media/shape-text-team.836bd7ef85faeea7b5d3.jpg",
     "static/media/icon-marketing.png": "/appprooii-portal/static/media/icon-marketing.15960d2c1d24cd1aa503.png",
     "static/media/Rounded-Rectangle-1-copy.png": "/appprooii-portal/static/media/Rounded-Rectangle-1-copy.b1fa7ce02baef0ad844a.png",
@@ -33,6 +35,7 @@
     "static/media/news-1.png": "/appprooii-portal/static/media/news-1.d4c50e7235079fad362f.png",
     "static/media/hocmai.png": "/appprooii-portal/static/media/hocmai.5148960e9c12495d9d9f.png",
     "static/media/Group--4.png": "/appprooii-portal/static/media/Group--4.72d102bfb7a01dc20468.png",
+    "static/media/footer_BG-1800px-p-1600.jpeg": "/appprooii-portal/static/media/footer_BG-1800px-p-1600.aa9eccd3c406bbe7528f.jpeg",
     "static/media/Group-1-copy-8.png": "/appprooii-portal/static/media/Group-1-copy-8.7a7872ec381acea1297d.png",
     "static/media/svsub-BG_Header-p-1600.jpeg": "/appprooii-portal/static/media/svsub-BG_Header-p-1600.a80ff3f80032880654dd.jpeg",
     "static/media/2svsub-BG_Header-p-1600.jpeg": "/appprooii-portal/static/media/2svsub-BG_Header-p-1600.c6e58beb6ee7d66c293c.jpeg",
@@ -59,11 +62,11 @@
     "static/media/header-background.png": "/appprooii-portal/static/media/header-background.4af3dfa1063c44abb865.png",
     "static/media/travel.jpg": "/appprooii-portal/static/media/travel.d57b78a863b2dfc6160e.jpg",
     "index.html": "/appprooii-portal/index.html",
-    "main.c49b4c42.css.map": "/appprooii-portal/static/css/main.c49b4c42.css.map",
-    "main.5a4ca588.js.map": "/appprooii-portal/static/js/main.5a4ca588.js.map"
+    "main.75b32cf1.css.map": "/appprooii-portal/static/css/main.75b32cf1.css.map",
+    "main.a856bc32.js.map": "/appprooii-portal/static/js/main.a856bc32.js.map"
   },
   "entrypoints": [
-    "static/css/main.c49b4c42.css",
-    "static/js/main.5a4ca588.js"
+    "static/css/main.75b32cf1.css",
+    "static/js/main.a856bc32.js"
   ]
 }
