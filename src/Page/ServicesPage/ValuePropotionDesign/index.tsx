@@ -1,4 +1,4 @@
-import ImageStore from "../../../Store/ImageStore";
+import ImageStore from '../../../Store/ImageStore';
 
 const ValuePropotionDesign = () => {
   return (
@@ -31,14 +31,14 @@ const ValuePropotionDesign = () => {
         <div className='wrapper'>
           <div className='section2-title'>
             <img
-              className='section2-title-img'
+              className='title-text-background'
               src={ImageStore.headerBackground}
               alt=''
             />
-            <p>
+            <div className='title-text'>
               Are you struggling
               <br />‍<span className='green'>with the following?</span>
-            </p>
+            </div>
           </div>
           <Bubble
             clazzName='section2-bubble-1'
@@ -87,17 +87,17 @@ const ValuePropotionDesign = () => {
         <div className='wrapper'>
           <div className='section3-title'>
             <img
-              className='section3-title-img'
+              className='title-text-background'
               src={ImageStore.headerBackground}
               alt=''
             />
-            <p>
-              Our
+            <div className="title-text">
+            Our
               <br />
               strategy
               <br />
-              <span className='green'>approach</span>
-            </p>
+              <span className="green">approach</span>
+            </div>
           </div>
           <div className='section3-content'>
             <img

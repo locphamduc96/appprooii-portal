@@ -31,13 +31,13 @@ const AppStoreOptimisation = () => {
         <div className='wrapper'>
           <div className='section2-title'>
             <img
-              className='section2-title-img'
+              className='title-text-background'
               src={ImageStore.headerBackground}
               alt=''
             />
-            <p>
+            <div className='title-text'>
               What can we <span className='green'>do for you?</span>
-            </p>
+            </div>
           </div>
           <p className='section2-desc'>
             Spending time weekly on optimizing ASO including:
@@ -69,11 +69,11 @@ const AppStoreOptimisation = () => {
             <img
               src={ImageStore.headerBackground}
               alt=''
-              className='section3-title-img'
+              className='title-text-background'
             />
-            <p>
+            <div className='title-text'>
               Our<span className='green'> Works</span>
-            </p>
+            </div>
           </div>
           <div className='section3-list-work'>
             <Work imgSrc={ImageStore.panelHocMai} />

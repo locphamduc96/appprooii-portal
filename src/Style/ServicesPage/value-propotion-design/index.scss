@@ -11,6 +11,7 @@
         @include media-m(xl) {
             height: 609px;
             background-image: url(../../../assets/images/svsub-BG_Header-p-1600.jpeg);
+            margin-bottom: calc(200px * 0.6667);
         }
 
         &-wrapper {
@@ -25,7 +26,9 @@
             align-items: flex-start;
 
             @include media-m(xl) {
-                padding-top: 290px;
+                padding-top: calc(440px * 0.6667);
+                width: calc(900px * 0.6667);
+                height: calc(500px * 0.6667);
             }
         }
 
@@ -35,7 +38,8 @@
             filter: drop-shadow(15px 10px 5px #148D75BD);
 
             @include media-m(xl) {
-                font-size: 47px;
+                font-size: calc(70px * 0.6667);
+                filter: drop-shadow(calc(15px * 0.6667) calc(10px * 0.6667) calc(5px * 0.6667) #148D75BD);
             }
         }
 
@@ -48,7 +52,8 @@
             color: #848282;
 
             @include media-m(xl) {
-                font-size: 18px;
+                margin-top: calc(30px * 0.6667);
+                font-size: calc(22px * 0.6667);
             }
         }
     }
@@ -68,60 +73,67 @@
         background-position: top center;
         background-repeat: no-repeat;
 
-        &-title {
-            position: relative;
-
-            &-img {
-                position: absolute;
-                top: -20px;
-                left: -50px;
-            }
-
-            p {
-                position: relative;
-                font-size: 56px;
-                font-weight: 800;
-
-                color: $primary-color;
-
-                .green {
-                    color: $secondary-color;
-                }
-            }
+        @include media-m(xl) {
+            height: calc(1000px * 0.6667);
+            background-image: url(../../../assets/images/2svsub-BG_Headeraaa-p-1080.png);
         }
 
         &-bubble {
             position: absolute;
+            width: 390px;
+            height: 293px;
+            padding: 45px 45px;
 
-            width: 420px;
-            height: calc(420px * 0.75);
+            display: flex;
 
             background-image: url(../../../assets/images/Group-1-copy-8.png);
             background-size: cover;
             background-repeat: no-repeat;
 
-            display: flex;
-            padding: 60px 60px;
+            @include media-m(xl) {
+                width: calc(390px * 0.6667);
+                height: calc(293px * 0.6667);
+                padding: calc(45px * 0.6667) calc(45px * 0.6667);
+            }
 
             &-content {
                 font-size: 20px;
                 font-weight: 700;
                 color: $black-color;
+
+                @include media-m(xl) {
+                    font-size: calc(20px * 0.6667);                
+                }
             }
 
             &-1 {
                 top: -150px;
-                left: 620px;
+                left: 770px;
+
+                @include media-m(xl) {
+                    top: calc(-150px * 0.6667);
+                    left: calc(770px * 0.6667);            
+                }
             }
 
             &-2 {
                 top: 230px;
                 left: 350px;
+
+                @include media-m(xl) {
+                    top: calc(230px * 0.6667);
+                    left: calc(350px * 0.6667);            
+                }
             }
 
             &-3 {
                 top: 180px;
-                left: 920px;
+                left: 820px;
+
+                @include media-m(xl) {
+                    top: calc(180px * 0.6667);
+                    left: calc(860px * 0.6667);            
+                }
             }
         }
     }
@@ -137,31 +149,13 @@
 
         margin-bottom: 100px;
 
+        @include media-m(xl) {
+            margin-bottom: calc(100px * 0.6667);                
+        }
+
         .wrapper {
             display: flex;
             flex-direction: row;
-        }
-
-        &-title {
-            position: relative;
-
-            &-img {
-                position: absolute;
-                top: -20px;
-                left: -50px;
-            }
-
-            p {
-                position: relative;
-                font-size: 56px;
-                font-weight: 800;
-
-                color: $primary-color;
-
-                .green {
-                    color: $secondary-color;
-                }
-            }
         }
 
         &-content {
@@ -175,18 +169,32 @@
                 font-size: 20px;
                 font-weight: 700;
                 color: $black-color;
+
+                @include media-m(xl) {
+                    font-size: calc(20px * 0.6667);                
+                }
             }
 
             &-1 {
                 position: absolute;
                 top: 140px;
                 left: 170px;
+
+                @include media-m(xl) {
+                    top: calc(140px * 0.6667);
+                    left: calc(170px * 0.6667);          
+                }
             }
 
             &-2 {
                 position: absolute;
                 top: 140px;
                 left: 520px;
+
+                @include media-m(xl) {
+                    top: calc(140px * 0.6667);
+                    left: calc(520px * 0.6667);          
+                }
             }
 
 
@@ -194,12 +202,22 @@
                 position: absolute;
                 top: 490px;
                 left: 170px;
+
+                @include media-m(xl) {
+                    top: calc(490px * 0.6667);
+                    left: calc(170px * 0.6667);          
+                }
             }
 
             &-4 {
                 position: absolute;
                 top: 490px;
                 left: 520px;
+
+                @include media-m(xl) {
+                    top: calc(490px * 0.6667);
+                    left: calc(520px * 0.6667);          
+                }
             }
         }
     }
