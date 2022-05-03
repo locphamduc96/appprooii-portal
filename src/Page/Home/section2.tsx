@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import ImageStore from '../../Store/ImageStore';
+import ImageStorage from '../../Store/ImageStorage';
 
 const Section2 = () => {
   const [isLeftBoardOpen, setLeftBoardOpen] = useState<boolean>(false);
@@ -22,7 +22,7 @@ const Section2 = () => {
           // style={{ opacity: 0 }}
         >
           <img
-            src={ImageStore.headerBackground}
+            src={ImageStorage.headerBackground}
             loading='lazy'
             alt=''
             className='section2-title-background'
@@ -41,7 +41,7 @@ const Section2 = () => {
               className={`section2-marketing-icon ${
                 isLeftBoardOpen ? 'open' : ''
               }`}
-              src={ImageStore.iconMarketing}
+              src={ImageStorage.iconMarketing}
               alt=''
               loading='lazy'
             />
@@ -72,7 +72,7 @@ const Section2 = () => {
                 isLeftBoardOpen ? 'flip' : ''
               }`}
               onClick={hanldeClickLeftBoardArrow}
-              src={ImageStore.arrow}
+              src={ImageStorage.arrow}
               loading='lazy'
               alt=''
             />
@@ -87,7 +87,7 @@ const Section2 = () => {
               className={`section2-marketing-icon ${
                 isRightBoardOpen ? 'open' : ''
               }`}
-              src={ImageStore.iconChess}
+              src={ImageStorage.iconChess}
               alt=''
               loading='lazy'
             />
@@ -119,7 +119,7 @@ const Section2 = () => {
                 isRightBoardOpen ? 'flip' : ''
               }`}
               onClick={hanldeClickRightBoardArrow}
-              src={ImageStore.arrow}
+              src={ImageStorage.arrow}
               loading='lazy'
               data-w-id='61ab8e0b-9cde-a26f-3b73-7717a364b9e1'
               alt=''
@@ -143,7 +143,7 @@ const LeftBoardOpenContent = ({ isOpen }: any) => {
     <div className={`section2-marketing-extend ${isOpen ? 'open' : ''}`}>
       <img
         className='section2-marketing-extent-img'
-        src={ImageStore.homeBannerBackground}
+        src={ImageStorage.homeBannerBackground}
         alt=''
       />
       <div className='section2-marketing-extend-wrap'>
@@ -167,7 +167,7 @@ const RightBoardOpenContent = ({ isOpen }: any) => {
     <div className={`section2-marketing-extend ${isOpen ? 'open' : ''}`}>
       <img
         className='section2-marketing-extend-img'
-        src={ImageStore.homeBannerBackground}
+        src={ImageStorage.homeBannerBackground}
         alt=''
       />
 
@@ -190,14 +190,14 @@ const BlockContent = ({ content }: any) => {
   return (
     <div className='section2-marketing-block'>
       <img
-        src={ImageStore.blockBackground}
+        src={ImageStorage.blockBackground}
         alt=''
         className='section2-marketing-block-background'
       />
       <p className='section2-marketing-block-title'>{content}</p>
       <img
         className='section2-marketing-block-arrow'
-        src={ImageStore.arrow1}
+        src={ImageStorage.arrow1}
         loading='lazy'
         alt=''
       />

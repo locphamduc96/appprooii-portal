@@ -1,4 +1,4 @@
-import ImageStore from "../../Store/ImageStore";
+import ImageStorage from "../../Store/ImageStorage";
 
 const Section2 = () => {
   return (
@@ -17,7 +17,7 @@ const Section2 = () => {
         </div>
         <div className="section2-our-genes-desc">
           <img
-            src={ImageStore.aboutUsBanner}
+            src={ImageStorage.aboutUsBanner}
             loading="lazy"
             width={588}
             height={192}

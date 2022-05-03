@@ -59,7 +59,9 @@ import linkedinIcon from '../assets/images/linkedin-footer.png';
 
 import footerVerticalLine from '../assets/images/footer-line.png';
 
-const ImageStore = {
+import calendarIcon from '../assets/images/calendar.png';
+
+const ImageStorage = {
   approiLogo,
 
   headerBackground,
@@ -119,7 +121,9 @@ const ImageStore = {
   facebookIcon2,
   linkedinIcon,
 
-  footerVerticalLine
+  footerVerticalLine,
+
+  calendarIcon,
 };
 
-export default ImageStore;
+export default ImageStorage;

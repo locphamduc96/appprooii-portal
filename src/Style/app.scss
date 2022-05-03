@@ -2,6 +2,7 @@
 @import "variable.scss";
 @import "breakpoint_mixin";
 @import "text";
+@import "button";
 @import "global.scss";
 @import "navbar.scss";
 @import "footer.scss";
@@ -12,3 +13,6 @@
 @import "./ContactUs/index.scss";
 @import "./CaseStudy/index.scss";
 @import "./News/index.scss";
+@import "./NewsDetails/index.scss";
+@import "./form-element.scss";
+@import "./news-item.scss";

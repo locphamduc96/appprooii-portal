@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import ImageStore from '../Store/ImageStore';
+import ImageStorage from '../Store/ImageStorage';
 
 const Footer = () => {
   return (
@@ -51,17 +51,17 @@ const Footer = () => {
               <div className='footer-info-text-contact'>CONTACT US</div>
               <div className='footer-info-channel'>
                 <img
-                  src={ImageStore.zaloIcon}
+                  src={ImageStorage.zaloIcon}
                   alt=''
                   className='footer-info-channel-icon'
                 />
                 <img
-                  src={ImageStore.linkedinIcon}
+                  src={ImageStorage.linkedinIcon}
                   alt=''
                   className='footer-info-channel-icon'
                 />
                 <img
-                  src={ImageStore.facebookIcon1}
+                  src={ImageStorage.facebookIcon1}
                   alt=''
                   className='footer-info-channel-icon'
                 />
@@ -69,7 +69,7 @@ const Footer = () => {
             </div>
             <img
               className='footer-info-top-seperator'
-              src={ImageStore.footerVerticalLine}
+              src={ImageStorage.footerVerticalLine}
               loading='lazy'
               alt=''
             />
@@ -77,7 +77,7 @@ const Footer = () => {
               <div className='footer-info-detail'>
                 <img
                   className='footer-address-icon'
-                  src={ImageStore.addressIconWhite}
+                  src={ImageStorage.addressIconWhite}
                   alt=''
                 />
                 <p>infor@approi.co</p>
@@ -85,7 +85,7 @@ const Footer = () => {
               <div className='footer-info-detail'>
                 <img
                   className='footer-phone-icon'
-                  src={ImageStore.phoneIconWhite}
+                  src={ImageStorage.phoneIconWhite}
                   alt=''
                 />
                 <p>(+84) 789 996 688</p>
@@ -93,7 +93,7 @@ const Footer = () => {
               <div className='footer-info-detail'>
                 <img
                   className='footer-address-icon'
-                  src={ImageStore.addressIconWhite}
+                  src={ImageStorage.addressIconWhite}
                   alt=''
                 />
                 <p>

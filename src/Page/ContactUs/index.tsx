@@ -1,4 +1,4 @@
-import ImageStore from '../../Store/ImageStore';
+import ImageStorage from '../../Store/ImageStorage';
 
 const ContactUsPage = () => {
   return (
@@ -9,7 +9,7 @@ const ContactUsPage = () => {
           <div className='section2-title'>
             <img
               className='title-text-background'
-              src={ImageStore.headerBackground}
+              src={ImageStorage.headerBackground}
               alt=''
             />
             <div className='title-text'>
@@ -48,7 +48,7 @@ const ContactUsPage = () => {
                     rows={10}
                   ></textarea>
                 </div>
-                <button className='section2-form-submit custom-button'>
+                <button className='button'>
                   Send
                 </button>
               </form>
@@ -56,13 +56,13 @@ const ContactUsPage = () => {
             <div className='section2-info'>
               <img
                 className='section2-info-background'
-                src={ImageStore.contactUsPanelBackground}
+                src={ImageStorage.contactUsPanelBackground}
                 alt=''
               />
               <div className='section2-info-element'>
                 <img
                   className='section2-info-element-icon email'
-                  src={ImageStore.emailIconGreen}
+                  src={ImageStorage.emailIconGreen}
                   alt=''
                 />
                 <p className='section2-info-element-text'>infor@approi.co</p>
@@ -70,7 +70,7 @@ const ContactUsPage = () => {
               <div className='section2-info-element'>
                 <img
                   className='section2-info-element-icon phone'
-                  src={ImageStore.phoneIconGreen}
+                  src={ImageStorage.phoneIconGreen}
                   alt=''
                 />
                 <p className='section2-info-element-text'>(+84) 789 996 688</p>
@@ -78,7 +78,7 @@ const ContactUsPage = () => {
               <div className='section2-info-element'>
                 <img
                   className='section2-info-element-icon address'
-                  src={ImageStore.addressIconGreen}
+                  src={ImageStorage.addressIconGreen}
                   alt=''
                 />
                 <p className='section2-info-element-text'>

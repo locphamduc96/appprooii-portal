@@ -1,0 +1,84 @@
+.list-news-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 32px;
+    justify-items: center;
+}
+
+.news-item {
+    cursor: pointer;
+
+    position: relative;
+    width: 332px;
+    height: 395px;
+
+    border: 3px solid #E5F7F4;
+    border-radius: 30px;
+
+    @include media-m(xl) {
+        width: calc(221px);
+        height: calc(263px);
+    }
+
+    &-img {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 326px;
+        height: 223px;
+
+        border: none;
+        border-radius: 25px;
+        background: #D8FFE7 0% 0% no-repeat padding-box;
+
+        @include media-m(xl) {
+            width: calc(215px);                
+            height: calc(149px);
+            border-radius: 20px;
+        }
+
+        img {
+            border-radius: 25px;
+        }
+    }
+
+    &-time {
+        padding: 16px 16px 0px;
+        font-size: 18px;
+        color: #BDBDBD;
+
+        @include media-m(xl) {
+            padding: calc(16px * 0.6667) calc(16px * 0.6667) 0;      
+            font-size: calc(18px * 0.6667);          
+        }
+    }
+
+    &-title {
+        padding: 16px 16px 0px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        color: $black-color;
+
+        @include media-m(xl) {
+            padding: calc(16px * 0.6667) calc(16px * 0.6667) 0;                
+            font-size: calc(20px * 0.6667);
+            line-height: calc(24px * 0.6667);
+        }
+    }
+
+    &-arrow {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        width: 47px;
+        height: 19px;
+
+        @include media-m(xl) {
+            bottom: calc(20px * 0.6667);
+            right: calc(20px * 0.6667);
+            width: 47px * 0.6667;
+            height: 19px * 0.6667;
+        }
+    }
+}

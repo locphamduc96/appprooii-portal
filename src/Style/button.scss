@@ -1,33 +1,7 @@
-body {
-    // max-width: 1920px;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: transparent;
-    color: #000;
-}
-
-* {
-    transition: all 0.3s ease;
-}
-
-.wrapper {
-    position: relative;
-
-    width: 100vw;
-    max-width: 1170px;
-    min-height: auto;
-
-    margin-left: 10vw;
-    margin-right: 10vw;
-
-    @include media-m(xl) {
-        max-width: calc(1170px * 0.6667);                
-    }
-}
-
-.custom-button {
+.button {
     padding: 16px 36px;
     border-radius: 26px;
+    border: none !important;
 
     font-family: $font-family;
     font-size: 16px;
@@ -41,6 +15,12 @@ body {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 
+    @include media-m(xl) {
+       padding: 8px 18px;
+       border-radius: 20px;
+       font-size: 12px;
+    }
+
     &:hover {
         filter: brightness(1.1);
     }
@@ -50,8 +30,4 @@ body {
         background-color: $secondary-color;
         border: 1px $secondary-color solid;
     }
-}
-
-div {
-    font-family: $font-family;
 }

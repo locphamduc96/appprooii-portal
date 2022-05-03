@@ -1,7 +1,7 @@
 // import { a } from 'react-router-dom';
 
 import { Link } from 'react-router-dom';
-import ImageStore from '../Store/ImageStore';
+import ImageStorage from '../Store/ImageStorage';
 
 const NavBar = () => {
   return (
@@ -9,7 +9,7 @@ const NavBar = () => {
       <div className='navbar-container'>
         <Link to='/'>
           <img
-            src={ImageStore.approiLogo}
+            src={ImageStorage.approiLogo}
             loading='lazy'
             alt=''
             className='logo-image'

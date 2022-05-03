@@ -1,22 +1,22 @@
-import ImageStore from '../../Store/ImageStore';
+import ImageStorage from '../../Store/ImageStorage';
 
 const TEAM_INFO = [
-  { imgUrl: ImageStore.aboutUsMember1, name: 'Mr. Binh', role: 'Chair man' },
-  { imgUrl: ImageStore.aboutUsMember1, name: 'Mr. Duong', role: 'C.E.O' },
+  { imgUrl: ImageStorage.aboutUsMember1, name: 'Mr. Binh', role: 'Chair man' },
+  { imgUrl: ImageStorage.aboutUsMember1, name: 'Mr. Duong', role: 'C.E.O' },
   {
-    imgUrl: ImageStore.aboutUsMember1,
+    imgUrl: ImageStorage.aboutUsMember1,
     name: 'Mr. Hien',
     role: 'Chief of Finance',
   },
 
   {
-    imgUrl: ImageStore.aboutUsMember1,
+    imgUrl: ImageStorage.aboutUsMember1,
     name: 'Mr. Vinh',
     role: 'Head of Growth',
   },
-  { imgUrl: ImageStore.aboutUsMember1, name: 'Mr. Tuan', role: 'B.D. Manager' },
+  { imgUrl: ImageStorage.aboutUsMember1, name: 'Mr. Tuan', role: 'B.D. Manager' },
   {
-    imgUrl: ImageStore.aboutUsMember1,
+    imgUrl: ImageStorage.aboutUsMember1,
     name: 'Mr. Duong',
     role: 'Creative Manager',
   },

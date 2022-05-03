@@ -1,0 +1,141 @@
+.form {
+    &-element {
+        margin-bottom: 32px;
+        // padding-bottom: 20px;
+
+        &.inline {
+            display: flex;
+            align-items: center;
+        }
+
+        @include media-m(xl) {
+            margin-bottom: calc(32px * 0.6667);
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: bold;
+            color: $black-color;
+            margin-bottom: 5px;
+
+            @include media-m(xl) {
+                font-size: calc(18px * 0.6667);
+                margin-bottom: calc(5px * 0.6667);
+            }
+        }
+
+        &-input,
+        &-textarea {
+            width: 100%;
+            padding: 0 22px;
+            height: 50px;
+
+            border-style: solid;
+            border-width: 1px;
+            border-color: #05a387;
+            border-radius: 30px;
+            box-shadow: 1px 1px 7px -1px rgb(5 163 135 / 32%);
+
+            transition: all 0.3s ease;
+
+            font-family: $font-family;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 22px;
+
+            color: $black-color;
+
+            @include media-m(xl) {
+                padding: 0 calc(22px * 0.6667);
+                height: calc(50px * 0.6667);
+                border-radius: calc(30px * 0.6667);
+
+                font-size: calc(16px * 0.6667);
+                line-height: calc(22px * 0.6667);
+            }
+
+            &:hover {
+                border-color: #3898ec;
+                box-shadow: 1px 1px 7px -1px rgba(22, 60, 93, 0.32);
+            }
+
+            &:focus {
+                border-color: #3898ec;
+                box-shadow: 1px 1px 7px -1px rgba(22, 60, 93, 0.32);
+            }
+        }
+
+        textarea {
+            height: 168px;
+            padding: 16px 22px;
+
+            resize: none;
+
+            @include media-m(xl) {
+                height: calc(168px * 0.6667);
+                padding: calc(16px * 0.6667) calc(22px * 0.6667);
+            }
+        }
+
+        .description {
+            margin-left: 16px;
+            margin-bottom: 0 !important;
+            font-weight: 400;
+            color: #b1b1b2;
+
+            @include media-m(xl) {
+               margin-left: 8px;
+            }
+        }
+
+        input[type="checkbox"] {
+            cursor: pointer;
+            appearance: none;
+            -webkit-appearance: none;
+            width: 32px;
+            height: 32px;
+            border-radius: 16px;
+            border: solid 1px $secondary-color;
+            color: $secondary-color;
+            background-color: white;
+            box-shadow: 1px 1px 7px -1px rgb(5 163 135 / 32%);
+
+            transition: all 0.3s ease;
+
+            @include media-m(xl) {
+                width: 20px;
+                height: 20px;
+            }
+
+            &:checked::after {
+                content: "";
+                display: inline-block;
+                position: absolute;
+                width: 24px;
+                height: 24px;
+                background-color: $secondary-color;
+                border-radius: 14px;
+                margin-top: 3px;
+                margin-left: 3px;
+                transition: all 0.3s ease;
+
+                @include media-m(xl) {
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 8px;
+                    margin-top: 1px;
+                    margin-left: 1px;
+                }
+            }
+        }
+
+        // input[type='checkbox']:after {
+        //     content: "\2022";
+        //     color: $primary-color;
+        // }
+    }
+
+    &-submit {
+        border: none !important;
+    }
+}

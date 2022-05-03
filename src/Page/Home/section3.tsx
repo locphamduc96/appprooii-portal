@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import ImageStore from '../../Store/ImageStore';
+import ImageStorage from '../../Store/ImageStorage';
 
 const Section3 = () => {
   return (
@@ -10,7 +10,7 @@ const Section3 = () => {
           // style={{ opacity: 0 }}
         >
           <img
-            src={ImageStore.headerBackground}
+            src={ImageStorage.headerBackground}
             loading='lazy'
             alt=''
             className='section3-title-background'
@@ -21,18 +21,18 @@ const Section3 = () => {
           </div>
         </div>
         <div className='section3-client'>
-          <ClientImage src={ImageStore.wetvImg} />
-          <ClientImage src={ImageStore.mbImg} />
-          <ClientImage src={ImageStore.tpImg} />
-          <ClientImage src={ImageStore.baeminImg} />
-          <ClientImage src={ImageStore.shopeeImg} />
-          <ClientImage src={ImageStore.travelImg} />
-          <ClientImage src={ImageStore.funImg} />
-          <ClientImage src={ImageStore.eduImg} />
-          <ClientImage src={ImageStore.megImg} />
-          <ClientImage src={ImageStore.spoImg} />
-          <ClientImage src={ImageStore.galImg} />
-          <ClientImage src={ImageStore.vtcImg} />
+          <ClientImage src={ImageStorage.wetvImg} />
+          <ClientImage src={ImageStorage.mbImg} />
+          <ClientImage src={ImageStorage.tpImg} />
+          <ClientImage src={ImageStorage.baeminImg} />
+          <ClientImage src={ImageStorage.shopeeImg} />
+          <ClientImage src={ImageStorage.travelImg} />
+          <ClientImage src={ImageStorage.funImg} />
+          <ClientImage src={ImageStorage.eduImg} />
+          <ClientImage src={ImageStorage.megImg} />
+          <ClientImage src={ImageStorage.spoImg} />
+          <ClientImage src={ImageStorage.galImg} />
+          <ClientImage src={ImageStorage.vtcImg} />
         </div>
         <div className='section3-bottom'>
           <Link to='/case-study' className='custom-button'>
@@ -45,7 +45,7 @@ const Section3 = () => {
           // style={{ opacity: 0 }}
         >
           <img
-            src={ImageStore.headerBackground}
+            src={ImageStorage.headerBackground}
             loading='lazy'
             alt=''
             className='section3-title-background'
@@ -56,10 +56,10 @@ const Section3 = () => {
           </div>
         </div>
         <div className='section3-partner'>
-          <PartnerImage src={ImageStore.fbPartner} />
-          <PartnerImage src={ImageStore.ggPartner} />
-          <PartnerImage src={ImageStore.tikPartner} />
-          <PartnerImage src={ImageStore.appPartner} />
+          <PartnerImage src={ImageStorage.fbPartner} />
+          <PartnerImage src={ImageStorage.ggPartner} />
+          <PartnerImage src={ImageStorage.tikPartner} />
+          <PartnerImage src={ImageStorage.appPartner} />
         </div>
       </div>
     </div>

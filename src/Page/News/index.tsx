@@ -1,5 +1,6 @@
 import { Carousel } from 'react-responsive-carousel';
-import ImageStore from '../../Store/ImageStore';
+import { Link } from 'react-router-dom';
+import ImageStorage from '../../Store/ImageStorage';
 
 const NewsPage = () => {
   return (
@@ -11,17 +12,18 @@ const NewsPage = () => {
           infiniteLoop={true}
           showThumbs={false}
         >
-          <img className='news-carousel' src={ImageStore.newsBanner} alt='' />
-          <img className='news-carousel' src={ImageStore.newsBanner} alt='' />
-          <img className='news-carousel' src={ImageStore.newsBanner} alt='' />
+          <img className='news-carousel' src={ImageStorage.newsBanner} alt='' />
+          <img className='news-carousel' src={ImageStorage.newsBanner} alt='' />
+          <img className='news-carousel' src={ImageStorage.newsBanner} alt='' />
         </Carousel>
       </div>
       <div className='section2'>
         <div className='wrapper'>
           <div className='section2-list-new'>
-            {NEWS_ARR.map((news) => {
+            {NEWS_ARR.map((news, index) => {
               return (
                 <News
+                  id={news.id}
                   imgSrc={news.imgSrc}
                   time={news.time}
                   title={news.title}
@@ -38,18 +40,24 @@ const NewsPage = () => {
 
 export default NewsPage;
 
-const News = ({ imgSrc, title, time }: any) => {
+const News = ({ id, imgSrc, title, time }: any) => {
   return (
-    <div className='section2-news'>
-      <div className='section2-news-img'>
-        {imgSrc ? <img src={imgSrc} alt='' /> : null}
+    <Link to={`/news/${id}`}>
+      <div className='section2-news'>
+        <div className='section2-news-img'>
+          {imgSrc ? <img src={imgSrc} alt='' /> : null}
+        </div>
+        <div className='section2-news-content'>
+          <p className='section2-news-time'>{time}</p>
+          <p className='section2-news-title'>{title}</p>
+          <img
+            className='section2-news-arrow'
+            src='images/arrow_1.png'
+            alt=''
+          />
+        </div>
       </div>
-      <div className='section2-news-content'>
-        <p className='section2-news-time'>{time}</p>
-        <p className='section2-news-title'>{title}</p>
-        <img className='section2-news-arrow' src='images/arrow_1.png' alt='' />
-      </div>
-    </div>
+    </Link>
   );
 };
 
@@ -92,21 +100,25 @@ const Pagination = ({ startIndex, endIndex, currentIndex }: any) => {
 
 const NEWS_ARR = [
   {
-    imgSrc: ImageStore.newsImage,
+    id: 1,
+    imgSrc: ImageStorage.newsImage,
     time: 'August 05, 2021',
     title: 'How to build a brand for mobile apps',
   },
   {
+    id: 2,
     imgSrc: null,
     time: 'August 05, 2021',
     title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
   },
   {
+    id: 3,
     imgSrc: null,
     time: 'August 05, 2021',
     title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
   },
   {
+    id: 4,
     imgSrc: null,
     time: 'August 05, 2021',
     title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',

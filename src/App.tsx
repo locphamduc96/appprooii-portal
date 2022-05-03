@@ -1,5 +1,5 @@
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 import Footer from './Component/Footer';
 import NavBar from './Component/NavBar';
 import ScrollToTop from './Component/ScrollToTop';
@@ -8,6 +8,7 @@ import CaseStudyPage from './Page/CaseStudy';
 import ContactUsPage from './Page/ContactUs';
 import HomePage from './Page/Home';
 import NewsPage from './Page/News';
+import NewsDetails from './Page/News/NewsDetails';
 import ServicesPage from './Page/ServicesPage';
 import AppStoreOptimisation from './Page/ServicesPage/AppStoreOptimisation';
 import ValuePropotionDesign from './Page/ServicesPage/ValuePropotionDesign';
@@ -16,7 +17,7 @@ import './Style/app.scss';
 function App() {
   return (
     <div className='body'>
-      <BrowserRouter>
+      <HashRouter>
         <NavBar />
         <ScrollToTop>
           <Routes>
@@ -33,11 +34,12 @@ function App() {
             />
             <Route path='/case-study' element={<CaseStudyPage />} />
             <Route path='/news' element={<NewsPage />} />
+            <Route path='/news/:id' element={<NewsDetails />} />
             <Route path='/contact' element={<ContactUsPage />} />
           </Routes>
         </ScrollToTop>
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }

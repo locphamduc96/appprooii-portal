@@ -1,11 +1,11 @@
-import ImageStore from "../../Store/ImageStore";
+import ImageStorage from "../../Store/ImageStorage";
 
 const Section3 = () => {
   return (
     <div className="section3">
       <img
         className="section3-triangle-image"
-        src={ImageStore.aboutUsTriange}
+        src={ImageStorage.aboutUsTriange}
         loading="lazy"
         id="w-node-_53599fae-66c4-6470-6ca0-42e481fa0c05-7cf94638"
         // sizes='(max-width: 991px) 100vw, 532px'

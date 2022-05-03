@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import CaseStudyItem from '../../Component/CaseStudyItem';
-import ImageStore from '../../Store/ImageStore';
+import ImageStorage from '../../Store/ImageStorage';
 
 const INDEX_DEFAULT = -1;
 
@@ -36,10 +36,10 @@ const CaseStudyPage = () => {
 
       <div className='section3'>
         <div className='wrapper'>
-          <CaseStudyItem imgSrc={ImageStore.panelHocMai} />
+          <CaseStudyItem imgSrc={ImageStorage.panelHocMai} />
           <CaseStudyItem />
           <CaseStudyItem />
-          <CaseStudyItem imgSrc={ImageStore.panelTraveloka} />
+          <CaseStudyItem imgSrc={ImageStorage.panelTraveloka} />
           <CaseStudyItem />
           <CaseStudyItem />
         </div>
@@ -56,7 +56,7 @@ const Category = ({ content, clazzActive, onClick }: any) => {
       <p className='section2-case-study-content'>{content}</p>
       <img
         className='section2-case-study-img'
-        src={ImageStore.caseStudyIconOptimise}
+        src={ImageStorage.caseStudyIconOptimise}
         alt=''
       />
     </div>

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import ImageStore from '../../../Store/ImageStore';
+import ImageStorage from '../../../Store/ImageStorage';
 
 const AppStoreOptimisation = () => {
   return (
@@ -32,7 +32,7 @@ const AppStoreOptimisation = () => {
           <div className='section2-title'>
             <img
               className='title-text-background'
-              src={ImageStore.headerBackground}
+              src={ImageStorage.headerBackground}
               alt=''
             />
             <div className='title-text'>
@@ -60,14 +60,14 @@ const AppStoreOptimisation = () => {
               ]}
             />
           </div>
-          <img className='section2-arrow' src={ImageStore.arrow10} alt='' />
+          <img className='section2-arrow' src={ImageStorage.arrow10} alt='' />
         </div>
       </div>
       <div className='section3'>
         <div className='wrapper'>
           <div className='section3-title'>
             <img
-              src={ImageStore.headerBackground}
+              src={ImageStorage.headerBackground}
               alt=''
               className='title-text-background'
             />
@@ -76,10 +76,10 @@ const AppStoreOptimisation = () => {
             </div>
           </div>
           <div className='section3-list-work'>
-            <Work imgSrc={ImageStore.panelHocMai} />
+            <Work imgSrc={ImageStorage.panelHocMai} />
             <Work />
             <Work />
-            <Work imgSrc={ImageStore.panelTraveloka} />
+            <Work imgSrc={ImageStorage.panelTraveloka} />
             <Link className='section3-btn-see-more' to='/case-study'>
               <div className='custom-button'>See more</div>
             </Link>
