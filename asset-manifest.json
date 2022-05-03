@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/appprooii-portal/static/css/main.75b32cf1.css",
-    "main.js": "/appprooii-portal/static/js/main.a856bc32.js",
+    "main.css": "/appprooii-portal/static/css/main.27120728.css",
+    "main.js": "/appprooii-portal/static/js/main.2d606cbd.js",
     "static/media/iconstr-2.png": "/appprooii-portal/static/media/iconstr-2.d2720523a1f791ea7cf8.png",
     "static/media/iconstr2x.png": "/appprooii-portal/static/media/iconstr2x.557cfedcff4a63d12252.png",
     "static/media/footer_BG-1800px.jpg": "/appprooii-portal/static/media/footer_BG-1800px.1d352da84b108468540b.jpg",
@@ -62,11 +62,11 @@
     "static/media/header-background.png": "/appprooii-portal/static/media/header-background.4af3dfa1063c44abb865.png",
     "static/media/travel.jpg": "/appprooii-portal/static/media/travel.d57b78a863b2dfc6160e.jpg",
     "index.html": "/appprooii-portal/index.html",
-    "main.75b32cf1.css.map": "/appprooii-portal/static/css/main.75b32cf1.css.map",
-    "main.a856bc32.js.map": "/appprooii-portal/static/js/main.a856bc32.js.map"
+    "main.27120728.css.map": "/appprooii-portal/static/css/main.27120728.css.map",
+    "main.2d606cbd.js.map": "/appprooii-portal/static/js/main.2d606cbd.js.map"
   },
   "entrypoints": [
-    "static/css/main.75b32cf1.css",
-    "static/js/main.a856bc32.js"
+    "static/css/main.27120728.css",
+    "static/js/main.2d606cbd.js"
   ]
 }
