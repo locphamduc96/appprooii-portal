@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-import ImageStorage from '../Store/ImageStorage';
+import ImageStorage from '../Constant/ImageStorage';
+import Path from '../Constant/Path';
 
 const Footer = () => {
   return (
@@ -7,10 +8,10 @@ const Footer = () => {
       <div className='wrapper'>
         {/* FOOTER SUBSCRIBE EMAIL */}
         <div className='footer-subscribe'>
-          <div className='title-text'><span className="green">Do you want to receive</span></div>
           <div className='title-text'>
-            daily growth hacking tip?
+            <span className='green'>Do you want to receive</span>
           </div>
+          <div className='title-text'>daily growth hacking tip?</div>
           <div className='footer-subscribe-form'>
             <form
               id='email-form'
@@ -53,17 +54,17 @@ const Footer = () => {
                 <img
                   src={ImageStorage.zaloIcon}
                   alt=''
-                  className='footer-info-channel-icon'
+                  className='footer-info-channel-icon cursor'
                 />
                 <img
-                  src={ImageStorage.linkedinIcon}
+                  src={ImageStorage.linkedInIcon}
                   alt=''
-                  className='footer-info-channel-icon'
+                  className='footer-info-channel-icon cursor'
                 />
                 <img
                   src={ImageStorage.facebookIcon1}
                   alt=''
-                  className='footer-info-channel-icon'
+                  className='footer-info-channel-icon cursor'
                 />
               </div>
             </div>
@@ -80,7 +81,7 @@ const Footer = () => {
                   src={ImageStorage.addressIconWhite}
                   alt=''
                 />
-                <p>infor@approi.co</p>
+                <p>info@approi.co</p>
               </div>
               <div className='footer-info-detail'>
                 <img
@@ -115,15 +116,34 @@ const Footer = () => {
                 Services
               </Link>
               <ul className='list w-list-unstyled'>
-                <li className='link-sub-footer'>Value Proposition Design</li>
-                <li className='link-sub-footer'>Communication</li>
-                <li className='link-sub-footer'>Growth Hacking Strategy</li>
-                <li className='link-sub-footer'>App Store Optimisation</li>
-                <li className='link-sub-footer'>Performance Advertising</li>
-                <li className='link-sub-footer'>Affiliate Marketing</li>
-                <li className='link-sub-footer'>Content Marketing</li>
-                <li className='link-sub-footer'>Website Audit</li>
-                <li className='link-sub-footer'>Marketing automation</li>
+                <Link to={Path.VALUE_PROPOSITION_DESIGN}>
+                  <li className='link-sub-footer'>Value Proposition Design</li>
+                </Link>
+                <Link to={Path.BRAND_COMMUNICATION}>
+                  <li className='link-sub-footer'>Brand Communication</li>
+                </Link>
+                <Link to={Path.GROWTH_HACKING_STRATEGY}>
+                  <li className='link-sub-footer'>Growth Hacking Strategy</li>
+                </Link>
+
+                <Link to={Path.APP_STORE_OPTIMISATION}>
+                  <li className='link-sub-footer'>App Store Optimisation</li>
+                </Link>
+                <Link to={Path.PERFORMANCE_ADVERTISING}>
+                  <li className='link-sub-footer'>Performance Advertising</li>
+                </Link>
+                <Link to={Path.AFFILIATE_MARKETING}>
+                  <li className='link-sub-footer'>Affiliate Marketing</li>
+                </Link>
+                <Link to={Path.CONTENT_MARKETING}>
+                  <li className='link-sub-footer'>Content Marketing</li>
+                </Link>
+                <Link to={Path.WEBSITE_AUDIT}>
+                  <li className='link-sub-footer'>Website Audit</li>
+                </Link>
+                <Link to={Path.MARKETING_AUTOMATION}>
+                  <li className='link-sub-footer'>Marketing automation</li>
+                </Link>
               </ul>
             </div>
             <div className='footer-info-link-element'>
@@ -139,7 +159,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className='footer-info-link-element'>
-              <Link to='/news' className='footer-link'>
+              <Link to='/blog' className='footer-link'>
                 News
               </Link>
             </div>

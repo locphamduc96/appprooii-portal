@@ -1,17 +1,12 @@
 import { Link } from 'react-router-dom';
-import ImageStorage from '../../Store/ImageStorage';
+import ImageStorage from '../../Constant/ImageStorage';
+import Path from '../../Constant/Path';
 import BadgeItem from './BadgeItem';
 
 const Section2 = () => {
   return (
     <div className='section2'>
       <div className='section2-left-image'></div>
-      {/* <img
-        className='section2-left-image'
-        src={ImageStorage.serviceSection2Image}
-        alt=''
-        loading='lazy'
-      /> */}
       <div className='section2-right'>
         <div className='section2-right-title'>
           <img
@@ -30,11 +25,15 @@ const Section2 = () => {
           concern that make you stay alert at night and get to the bottom of it.
         </div>
         <div className='section2-right-list-badge'>
-          <Link to='/services/value-propotion-design'>
+          <Link to={Path.VALUE_PROPOSITION_DESIGN}>
             <BadgeItem title={['Value Proposition', <br />, 'Design']} />
           </Link>
-          <BadgeItem title={['Brand', <br />, 'Communication']} />
-          <BadgeItem title={['Growth Hacking', <br />, 'Strategy']} />
+          <Link to={Path.BRAND_COMMUNICATION}>
+            <BadgeItem title={['Brand', <br />, 'Communication']} />
+          </Link>
+          <Link to={Path.GROWTH_HACKING_STRATEGY}>
+            <BadgeItem title={['Growth Hacking', <br />, 'Strategy']} />
+          </Link>
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 const Section1 = () => {
-  return <div className="section1">
-    
+  return <div className="section1 section1-default">
+
   </div>
 }
 

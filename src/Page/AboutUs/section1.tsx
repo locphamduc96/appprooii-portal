@@ -1,7 +1,7 @@
 const Section1 = () => {
   return (
     <>
-      <div className='section1'></div>
+      <div className='section1 section1-default'></div>
     </>
   );
 };

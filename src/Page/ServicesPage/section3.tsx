@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-import ImageStorage from '../../Store/ImageStorage';
+import ImageStorage from '../../Constant/ImageStorage';
+import Path from '../../Constant/Path';
 import BadgeItem from './BadgeItem';
 
 const Section3 = () => {
@@ -23,23 +24,27 @@ const Section3 = () => {
           and understanding of consumer digital behavior.
         </div>
         <div className='section3-left-list-badge'>
-          <Link to='/services/app-store-optimisation'>
+          <Link to={Path.APP_STORE_OPTIMISATION}>
             <BadgeItem title={['App Store', <br />, 'Optimisation']} />
           </Link>
-          <BadgeItem title={['Performance', <br />, 'Advertising']} />
-          <BadgeItem title={['Affiliate', <br />, 'Marketing']} />
-          <BadgeItem title={['Content', <br />, 'Marketing']} />
-          <BadgeItem title={['Website', <br />, 'Audit']} />
-          <BadgeItem title={['Marketing', <br />, 'Automation']} />
+          <Link to={Path.PERFORMANCE_ADVERTISING}>
+            <BadgeItem title={['Performance', <br />, 'Advertising']} />
+          </Link>
+          <Link to={Path.AFFILIATE_MARKETING}>
+            <BadgeItem title={['Affiliate', <br />, 'Marketing']} />
+          </Link>
+          <Link to={Path.CONTENT_MARKETING}>
+            <BadgeItem title={['Content', <br />, 'Marketing']} />
+          </Link>
+          <Link to={Path.WEBSITE_AUDIT}>
+            <BadgeItem title={['Website', <br />, 'Audit']} />
+          </Link>
+          <Link to={Path.MARKETING_AUTOMATION}>
+            <BadgeItem title={['Marketing', <br />, 'Automation']} />
+          </Link>
         </div>
       </div>
-      <div className="section3-right-image"></div>
-      {/* <img
-        className='section3-right-image'
-        src={ImageStorage.serviceSection3Image}
-        alt=''
-        loading='lazy'
-      /> */}
+      <div className='section3-right-image'></div>
     </div>
   );
 };

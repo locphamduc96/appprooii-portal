@@ -21,7 +21,7 @@ body {
     margin-right: 10vw;
 
     @include media-m(xl) {
-        max-width: calc(1170px * 0.6667);                
+        max-width: calc(1170px * 0.6667);
     }
 }
 
@@ -54,4 +54,54 @@ body {
 
 div {
     font-family: $font-family;
+}
+
+html {
+    @include media-m(_5xl) {
+        --size-divisor: 2;
+    }
+
+    @include media-m(_4xl) {
+        --size-divisor: 1.5;
+    }
+
+    @include media-m(xxxl) {
+        --size-divisor: 1.292929;
+    }
+
+    @include media-m(xxl) {
+        --size-divisor: 1;
+    }
+
+    @include media-m(xl) {
+        --size-divisor: 0.6667;
+    }
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.color-white {
+    color: white;
+}
+
+.color-primary {
+    color: $primary-color;
+}
+
+.color-secondary {
+    color: $secondary-color;
+}
+
+.section1-default {
+    position: relative;
+    height: 913px;
+    // background-image: url(../../assets/images/BG_Header-small.jpg.png);
+    background-size: cover;
+    background-position: top center;
+
+    @include media-m(xl, xxl, xxxl, _4xl) {
+        height: calc(913px * var(--size-divisor));
+    }
 }

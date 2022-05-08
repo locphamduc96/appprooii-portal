@@ -1,21 +1,11 @@
 .home {
     .section1 {
-        position: relative;
-
-        height: 913px;
-
         background-image: url(../../assets/images/BG_Header-small.jpg.png);
-        background-size: cover;
-        background-position: top center;
-
         display: flex;
         justify-content: center;
         align-items: center;
 
-        // transition: all 0.3s ease;
-
         @include media-m(xl) {
-            height: 609px;
             background-image: url(../../assets/images/BG_Header-small.jpg-p-1600.png);
         }
 
@@ -24,7 +14,7 @@
             top: 430px;
 
             display: flex;
-            justify-content: center; 
+            justify-content: center;
             align-items: center;
             column-gap: 120px;
 
@@ -37,9 +27,10 @@
 
             // transition: all 0.3s ease;
 
-            @include media-m(xl) {
-                top: 290px;
-                font-size: 43px;
+            @include media-m(xl, xxl, xxxl, _4xl) {
+                top: calc(430px * var(--size-divisor));
+                column-gap: calc(120px * var(--size-divisor));
+                font-size: calc(65px * var(--size-divisor));
             }
         }
     }

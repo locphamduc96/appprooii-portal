@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import ImageStorage from '../../Store/ImageStorage';
+import ImageStorage from '../../Constant/ImageStorage';
+import Path from '../../Constant/Path';
 
 const Section2 = () => {
   const [isLeftBoardOpen, setLeftBoardOpen] = useState<boolean>(false);
@@ -28,7 +29,9 @@ const Section2 = () => {
             className='section2-title-background'
           />
           <div className='section2-title-text title-text'>
-            <div className='section2-title-text-top green'>What can we do for</div>
+            <div className='section2-title-text-top green'>
+              What can we do for
+            </div>
             <div className='section2-title-text-bottom'>
               your business growth?
             </div>
@@ -148,14 +151,32 @@ const LeftBoardOpenContent = ({ isOpen }: any) => {
       />
       <div className='section2-marketing-extend-wrap'>
         <div className='section2-marketing-extend-content'>
-          <BlockContent content={['App Store', <br />, 'Optimisation']} />
-          <BlockContent content={['Performance', <br />, 'Advertising']} />
-          <BlockContent content={['Affiliate', <br />, 'Marketing']} />
+          <BlockContent
+            link={Path.APP_STORE_OPTIMISATION}
+            content={['App Store', <br />, 'Optimisation']}
+          />
+          <BlockContent
+            link={Path.PERFORMANCE_ADVERTISING}
+            content={['Performance', <br />, 'Advertising']}
+          />
+          <BlockContent
+            link={Path.AFFILIATE_MARKETING}
+            content={['Affiliate', <br />, 'Marketing']}
+          />
         </div>
         <div className='section2-marketing-extend-content'>
-          <BlockContent content={['Content', <br />, 'Marketing']} />
-          <BlockContent content={['Website', <br />, 'Audit']} />
-          <BlockContent content={['Marketing', <br />, 'Automation']} />
+          <BlockContent
+            link={Path.CONTENT_MARKETING}
+            content={['Content', <br />, 'Marketing']}
+          />
+          <BlockContent
+            link={Path.WEBSITE_AUDIT}
+            content={['Website', <br />, 'Audit']}
+          />
+          <BlockContent
+            link={Path.MARKETING_AUTOMATION}
+            content={['Marketing', <br />, 'Automation']}
+          />
         </div>
       </div>
     </div>
@@ -174,33 +195,42 @@ const RightBoardOpenContent = ({ isOpen }: any) => {
       <div className='section2-marketing-extend-wrap'>
         <div className='section2-marketing-extend-content'>
           <BlockContent
+            link={Path.VALUE_PROPOSITION_DESIGN}
             content={['Value', <br />, 'Proposition', <br />, 'Design']}
           />
-          <BlockContent content={['Brand', <br />, 'Communication']} />
+          <BlockContent
+            link={Path.BRAND_COMMUNICATION}
+            content={['Brand', <br />, 'Communication']}
+          />
         </div>
         <div className='section2-marketing-extend-content'>
-          <BlockContent content={['Growth Hacking', <br />, 'Strategy']} />
+          <BlockContent
+            link={Path.GROWTH_HACKING_STRATEGY}
+            content={['Growth Hacking', <br />, 'Strategy']}
+          />
         </div>
       </div>
     </div>
   );
 };
 
-const BlockContent = ({ content }: any) => {
+const BlockContent = ({ link, content }: any) => {
   return (
-    <div className='section2-marketing-block'>
-      <img
-        src={ImageStorage.blockBackground}
-        alt=''
-        className='section2-marketing-block-background'
-      />
-      <p className='section2-marketing-block-title'>{content}</p>
-      <img
-        className='section2-marketing-block-arrow'
-        src={ImageStorage.arrow1}
-        loading='lazy'
-        alt=''
-      />
-    </div>
+    <Link to={link}>
+      <div className='section2-marketing-block'>
+        <img
+          src={ImageStorage.blockBackground}
+          alt=''
+          className='section2-marketing-block-background'
+        />
+        <p className='section2-marketing-block-title'>{content}</p>
+        <img
+          className='section2-marketing-block-arrow'
+          src={ImageStorage.arrow1}
+          loading='lazy'
+          alt=''
+        />
+      </div>
+    </Link>
   );
 };

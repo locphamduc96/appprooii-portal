@@ -1,9 +1,9 @@
-import ImageStorage from '../../Store/ImageStorage';
+import ImageStorage from '../../Constant/ImageStorage';
 
 const ContactUsPage = () => {
   return (
     <div className='contact-us'>
-      <div className='section1'></div>
+      <div className='section1 section1-default'></div>
       <div className='section2'>
         <div className='wrapper'>
           <div className='section2-title'>
@@ -89,23 +89,6 @@ const ContactUsPage = () => {
                   HCMC, Vietnam
                 </p>
               </div>
-              {/* <div className='section2-info-channel'>
-                <img
-                  className='section2-info-channel-icon'
-                  src='images/zalo-footer.png'
-                  alt=''
-                />
-                <img
-                  className='section2-info-channel-icon'
-                  src='images/in-footer.png'
-                  alt=''
-                />
-                <img
-                  className='section2-info-channel-icon'
-                  src='images/fb-footer.png'
-                  alt=''
-                />
-              </div> */}
             </div>
           </div>
         </div>

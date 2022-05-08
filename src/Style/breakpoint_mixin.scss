@@ -1,16 +1,25 @@
 $sm: 577px; // 576
 // Small tablets (portrait view)
-$md: 769px; // 768 
+$md: 769px; // 768
 // Tablets and small desktops
 $lg: 993px; // 992
 //
-$xl: 1281px; // 1280 
+$xl: 1281px; // 1280
+
+$xxl: 1981px;
+
+$xxxl: 2561px;
+
+$_4xl: 2881px;
 
 $breakpoints: ( //
     sm: $sm,
     md: $md,
     lg: $lg,
     xl: $xl,
+    xxl: $xxl,
+    xxxl: $xxxl,
+    _4xl: $_4xl,
 );
 
 @mixin media-m($keys...) {

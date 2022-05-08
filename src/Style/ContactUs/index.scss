@@ -1,15 +1,7 @@
 .contact-us {
     .section1 {
-        width: 100%;
-        height: 913px;
-
         background-image: url(../../assets/images/contact_BG_Header-small.png);
-        background-size: cover;
-        background-position: top center;
-        background-repeat: no-repeat;
-
         @include media-m(xl) {
-            height: 609px;
             background-image: url(../../assets/images/contact_BG_Header-small-p-1600.png);
         }
     }
@@ -106,15 +98,14 @@
                     }
 
                     &:hover {
-                        border-color: #3898EC;
+                        border-color: #3898ec;
                         box-shadow: 1px 1px 7px -1px rgba(22, 60, 93, 0.32);
                     }
 
                     &:focus {
-                        border-color: #3898EC;
+                        border-color: #3898ec;
                         box-shadow: 1px 1px 7px -1px rgba(22, 60, 93, 0.32);
                     }
-
                 }
 
                 textarea {

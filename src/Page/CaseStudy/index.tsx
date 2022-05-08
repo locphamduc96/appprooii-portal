@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import CaseStudyItem from '../../Component/CaseStudyItem';
-import ImageStorage from '../../Store/ImageStorage';
+import CaseStudyItem from './CaseStudyItem';
+import ImageStorage from '../../Constant/ImageStorage';
 
 const INDEX_DEFAULT = -1;
 
@@ -17,7 +17,7 @@ const CaseStudyPage = () => {
 
   return (
     <div className='case-study'>
-      <div className='section1'></div>
+      <div className='section1 section1-default'></div>
       <div className='section2'>
         <div className='wrapper'>
           {CASE_STUDY_ARR.map((caseStudy, index) => {

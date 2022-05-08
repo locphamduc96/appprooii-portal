@@ -1,4 +1,4 @@
-import ImageStorage from '../../Store/ImageStorage';
+import ImageStorage from '../../Constant/ImageStorage';
 
 const TEAM_INFO = [
   { imgUrl: ImageStorage.aboutUsMember1, name: 'Mr. Binh', role: 'Chair man' },

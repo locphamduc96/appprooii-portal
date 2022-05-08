@@ -4,7 +4,6 @@
     background-repeat: no-repeat;
 
     position: relative;
-    height: 1800px;
 
     margin-left: auto;
     margin-right: auto;
@@ -12,27 +11,35 @@
     display: flex;
     justify-content: center;
 
-    @include media-m(xl) {
+    @include media-m(xl, xxl, xxxl, _4xl) {
         background-image: url(../assets/images/footer_BG-1800px-p-1600.jpeg);
-        height: 1400px
+    }
+
+    @include media-m(xl, xxl, xxxl, _4xl) {
+        height: calc(1800px * var(--size-divisor));
     }
 
     &-subscribe {
         position: relative;
         margin-top: 20%;
         margin-bottom: 0%;
-        padding-right: 62px;
         padding-left: 62px;
+        padding-right: 62px;
 
-        @include media-m(xl) {
-            margin-top: 15%;
-            padding: 0 0;
+        @include media-m(xl, xxl, xxxl, _4xl) {
+            margin-top: 20%;
+            padding-left: calc(62px * var(--size-divisor));
+            padding-right: calc(62px * var(--size-divisor));
         }
 
         &-form {
             display: flex;
             align-items: flex-start;
             margin-top: 47px;
+
+            @include media-m(xl, xxl, xxxl, _4xl) {
+                margin-top: calc(47px * var(--size-divisor));
+            }
         }
 
         &-email-input {
@@ -50,6 +57,15 @@
             font-weight: 600;
 
             padding-left: 24px;
+
+            @include media-m(xl, xxl, xxxl, _4xl) {
+                width: calc(600px * var(--size-divisor));
+                height: calc(60px * var(--size-divisor));
+                margin-right: calc(40px * var(--size-divisor));
+                border-radius: calc(24px * var(--size-divisor));
+                font-size: calc(16px * var(--size-divisor));
+                padding-left: calc(24px * var(--size-divisor));
+            }
         }
 
         &-button {
@@ -67,6 +83,12 @@
 
             transition: filter 0.3s ease;
 
+            @include media-m(xl, xxl, xxxl, _4xl) {
+                border-radius: calc(24px * var(--size-divisor));
+                padding: calc(18px * var(--size-divisor)) calc(32px * var(--size-divisor));
+                font-size: calc(16px * var(--size-divisor));
+            }
+
             &:hover {
                 filter: brightness(1.1);
             }
@@ -83,9 +105,9 @@
 
         gap: 20px;
 
-        @include media-m(xl) {
-            top: 440px;
-            gap: calc(20px * 0.6667);
+        @include media-m(xl, xxl, xxxl, _4xl) {
+            top: calc(580px * var(--size-divisor));
+            gap: calc(20px * var(--size-divisor));
         }
 
         &-top {
@@ -94,8 +116,8 @@
             // justify-content: center;
             gap: 50px;
 
-            @include media-m() {
-                gap: calc(50px * 0.6667);
+            @include media-m(xl, xxl, xxxl, _4xl) {
+                gap: calc(50px * var(--size-divisor));
             }
         }
 
@@ -107,8 +129,8 @@
             align-items: flex-end;
             gap: 20px;
 
-            @include media-m() {
-                gap: calc(20px * 0.6667);
+            @include media-m(xl, xxl, xxxl, _4xl) {
+                gap: calc(20px * var(--size-divisor));
             }
         }
 
@@ -120,8 +142,8 @@
 
             color: $black-color-footer;
 
-            @include media-m(xl) {
-                font-size: calc(34px * 0.6667);                
+            @include media-m(xl, xxl, xxxl, _4xl) {
+                font-size: calc(34px * var(--size-divisor));
             }
 
             .highlight {
@@ -139,9 +161,9 @@
 
             color: #fff;
 
-            @include media-m(xl) {
-                font-size: calc(50px * 0.6667);
-                line-height: calc(50px * 0.6667);
+            @include media-m(xl, xxl, xxxl, _4xl) {
+                font-size: calc(50px * var(--size-divisor));
+                line-height: calc(50px * var(--size-divisor));
             }
         }
 
@@ -149,9 +171,9 @@
             width: 6px;
             height: 230px;
 
-            @include media-m(xl) {
-                width: calc(6px * 0.6667);
-                height: calc(230px * 0.6667);
+            @include media-m(xl, xxl, xxxl, _4xl) {
+                width: calc(6px * var(--size-divisor));
+                height: calc(230px * var(--size-divisor));
             }
         }
 
@@ -168,10 +190,10 @@
             width: 51px;
             height: 51px;
 
-            @include media-m(xl) {
-                gap: calc(30px * 0.6667);
-                width: calc(51px * 0.6667);
-                height: calc(51px * 0.6667);
+            @include media-m(xl, xxl, xxxl, _4xl) {
+                gap: calc(30px * var(--size-divisor));
+                width: calc(51px * var(--size-divisor));
+                height: calc(51px * var(--size-divisor));
             }
 
             &-icon {
@@ -189,8 +211,8 @@
             align-items: flex-start;
             gap: 30px;
 
-            @include media-m(xl) {
-                gap: calc(30px * 0.6667);            
+            @include media-m(xl, xxl, xxxl, _4xl) {
+                gap: calc(30px * var(--size-divisor));
             }
         }
 
@@ -199,8 +221,8 @@
             align-items: center;
             gap: 20px;
 
-            @include media-m(xl) {
-                gap: calc(20px * 0.6667)                
+            @include media-m(xl, xxl, xxxl, _4xl) {
+                gap: calc(20px * var(--size-divisor));
             }
 
             p {
@@ -209,9 +231,9 @@
                 font-size: 20px;
                 line-height: 28px;
 
-                @include media-m(xl) {
-                    font-size: calc(20px * 0.6667);        
-                    line-height: calc(28px * 0.6667);        
+                @include media-m(xl, xxl, xxxl, _4xl) {
+                    font-size: calc(20px  * var(--size-divisor));
+                    line-height: calc(28px  * var(--size-divisor));
                 }
             }
         }
@@ -222,10 +244,9 @@
             display: flex;
             align-items: flex-start;
             justify-content: center;
-            // gap: 80px;
 
-            @include media-m(xl) {
-                margin-top: calc(50px * 0.6667)                
+            @include media-m(xl, xxl, xxxl, _4xl) {
+                margin-top: calc(50px  * var(--size-divisor));
             }
 
             &-element {
@@ -233,15 +254,16 @@
                 flex-direction: column;
                 align-items: center;
 
-                margin: 0 30px;
-                width: 200px;
+                margin: 0 15px;
+                width: 230px;
+                text-align: center;
 
-                @include media-m(xl) {
-                    width: calc(200px * 0.6667);
-                    margin: 0 calc(30px * 0.6667);
+                @include media-m(xl, xxl, xxxl, _4xl) {
+                    width: calc(230px  * var(--size-divisor));
+                    margin: 0 calc(30px  * var(--size-divisor));
                 }
 
-                a {
+                & > a {
                     font-family: $font-family;
                     font-size: 28px;
                     font-weight: 700;
@@ -254,8 +276,8 @@
 
                     transition: color 0.3s ease;
 
-                    @include media-m(xl) {
-                        font-size: calc(28px * 0.6667);
+                    @include media-m(xl, xxl, xxxl, _4xl) {
+                        font-size: calc(28px  * var(--size-divisor));
                     }
 
                     &:hover {
@@ -271,9 +293,15 @@
                     color: #acffcc;
                     list-style-type: none;
 
-                    @include media-m(xl) {
-                        margin-top: calc(20px * 0.6667);
-                        font-size: calc(16px * 0.6667);
+                    @include media-m(xl, xxl, xxxl, _4xl) {
+                        margin-top: calc(20px  * var(--size-divisor));
+                        font-size: calc(16px  * var(--size-divisor));
+                    }
+
+                    & > a {
+                        cursor: pointer;
+                        text-decoration: none;
+                        color: #acffcc;
                     }
                 }
             }
@@ -284,9 +312,9 @@
         width: 22px;
         height: 33px;
 
-        @include media-m(xl) {
-            width: calc(22px * 0.6667);                  
-            height: calc(33px * 0.6667);
+        @include media-m(xl, xxl, xxxl, _4xl) {
+            width: calc(22px  * var(--size-divisor));
+            height: calc(33px  * var(--size-divisor));
         }
     }
 
@@ -294,9 +322,9 @@
         width: 26px;
         height: 37px;
 
-        @include media-m(xl) {
-            width: calc(26px * 0.6667);
-            height: calc(37px * 0.6667);
+        @include media-m(xl, xxl, xxxl, _4xl) {
+            width: calc(26px * var(--size-divisor));
+            height: calc(37px * var(--size-divisor));
         }
     }
 }

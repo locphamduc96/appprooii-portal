@@ -8,12 +8,16 @@
 
     margin: 0 auto;
     padding: 0 20px;
- 
+
     border-radius: 0px 0px 25px 25px;
     background-color: #fff;
     box-shadow: 0 0 20px 2px rgb(28 94 78 / 34%);
 
     z-index: 10;
+
+    @include media-m(xl, xxl, xxxl, _4xl) {
+        max-width: calc(1920px * var(--size-divisor));
+    }
 
     &-container {
         max-width: 1170px;
@@ -25,18 +29,36 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @include media-m(xl, xxl, xxxl, _4xl) {
+            max-width: calc(1170px * var(--size-divisor));
+            height: calc(80px * var(--size-divisor));
+        }
+    }
+
+    &-logo {
+        width: 115px;
+        height: 59px;
+
+        @include media-m(xl, xxl, xxxl, _4xl) {
+           width: calc(115px * var(--size-divisor));
+           height: calc(59px * var(--size-divisor));
+        }
     }
 
     &-menu {
         display: flex;
         align-items: center;
         gap: 60px;
+
+        @include media-m(xl, xxl, xxxl, _4xl) {
+            gap: calc(60px * var(--size-divisor));
+        }
     }
 
     &-link {
         font-family: $font-family;
         font-size: $font-size;
-        list-style: $font-size;
         font-weight: 500;
         letter-spacing: 3px;
         text-transform: uppercase;
@@ -47,6 +69,10 @@
         color: $primary-color;
 
         transition: transform 0.3s ease, color 0.3s ease;
+
+        @include media-m(xl, xxl, xxxl, _4xl) {
+           font-size: calc($font-size * var(--size-divisor));
+        }
 
         &:hover {
             -webkit-transform: scale(1.1);

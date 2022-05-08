@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import ImageStorage from '../../Store/ImageStorage';
+import ImageStorage from '../../Constant/ImageStorage';
 
 const Section3 = () => {
   return (

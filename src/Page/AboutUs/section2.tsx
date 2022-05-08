@@ -1,4 +1,4 @@
-import ImageStorage from "../../Store/ImageStorage";
+import ImageStorage from "../../Constant/ImageStorage";
 
 const Section2 = () => {
   return (
