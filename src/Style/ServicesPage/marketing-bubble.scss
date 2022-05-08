@@ -1,0 +1,24 @@
+.marketing-bubble {
+    position: relative;
+    width: 350px;
+    height: 229px;
+
+    background-image: url(../../assets/images/Shape-WCWD-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    padding: 20px;
+
+    .title {
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    .description {
+
+    }
+
+    &.hidden {
+        visibility: hidden;
+    }
+}

@@ -1,0 +1,288 @@
+.digital-marketing {
+    .section1 {
+        background-image: url(../../../assets/images/2svsub-BG_Header.jpg);
+        margin-bottom: 100px;
+
+        @include media-m(xl) {
+            background-image: url(../../../assets/images/2svsub-BG_Header-p-1600.jpeg);
+        }
+
+        @include media-m(xl, xxl, xxxl, _4xl) {
+           margin-bottom: calc(100px * var(--size-divisor));
+        }
+
+
+        &-wrapper {
+            margin-left: 38%;
+            margin-right: auto;
+            padding-top: 415px;
+            width: 900px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            @include media-m(xl) {
+                padding-top: calc(440px * 0.6667);
+                width: calc(900px * 0.6667);
+                height: calc(500px * 0.6667);
+            }
+        }
+
+        &-title {
+            position: relative;
+            height: 200px;
+            width: 100%;
+            font-size: 70px;
+            font-weight: 800;
+            filter: drop-shadow(15px 10px 5px #148D75BD);
+
+            @include media-m(xl) {
+                font-size: calc(70px * 0.6667);
+                filter: drop-shadow(calc(15px * 0.6667) calc(10px * 0.6667) calc(5px * 0.6667) #148D75BD);
+            }
+
+            &>p {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+        }
+
+        &-desc {
+            margin-top: 30px;
+
+            font-size: 22px;
+            font-weight: 400;
+
+            color: #848282;
+
+            @include media-m(xl) {
+                margin-top: calc(30px * 0.6667);
+                font-size: calc(22px * 0.6667);
+            }
+        }
+    }
+
+    .section2 {
+        position: relative;
+
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px;
+
+        display: flex;
+        justify-content: center;
+
+        @include media-m(xl) {
+            margin: 0 auto 75px;
+        }
+
+        .wrapper {
+            background-image: url(../../../assets/images/arrow-10-p-1080.png);
+            background-position: 10px 340px;
+            background-repeat: no-repeat;
+            height: 800px;
+        }
+
+        &-desc {
+            margin-top: 15px;
+            font-size: 22px;
+            color: #848282;
+
+            @include media-m(xl) {
+                margin-top: calc(15px * 0.6667);
+                font-size: calc(22px * 0.6667);
+            }
+        }
+
+        &-bubble-container {
+            margin-top: 75px;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+
+            @include media-m(xl) {
+                margin-top: calc(75px * 0.6667);
+                gap: calc(20px * 0.6667);
+            }
+        }
+
+        &-bubble {
+            position: relative;
+
+            width: 250px;
+            height: 163px;
+
+            background-image: url(../../../assets/images/Shape-WCWD-1.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            padding: 20px;
+
+            @include media-m(xl) {
+                width: calc(250px * 0.6667);
+                height: calc(163px * 0.6667);
+                padding: calc(20px * 0.6667);
+            }
+
+            &-content {
+                position: absolute;
+
+                font-size: 17px;
+                font-weight: 700;
+                color: $black-color;
+
+                @include media-m(xl) {
+                    font-size: calc(17px * 0.6667);
+                }
+            }
+
+            &-column {
+                position: relative;
+                top: 150px;
+                left: 100px;
+
+                width: 3px;
+                height: 100px;
+
+                border-radius: 1px;
+
+                background-color: #CAF4E8;
+
+                @include media-m(xl) {
+                    top: calc(150px * 0.6667);
+                    left: calc(100px * 0.6667);
+                    width: calc(3px * 0.6667);
+                    height: calc(100px * 0.6667);
+                }
+
+                &.column-1 {
+                    height: 280px;
+
+                    @include media-m(xl) {
+                        height: calc(280px * 0.6667);
+                    }
+                }
+
+                &.column-2 {
+                    height: 240px;
+
+                    @include media-m(xl) {
+                        height: calc(240px * 0.6667);
+                    }
+                }
+
+                &.column-3 {
+                    height: 200px;
+
+                    @include media-m(xl) {
+                        height: calc(200px * 0.6667);
+                    }
+                }
+            }
+        }
+
+        &-arrow {
+            margin-left: 100px;
+            width: 1170px;
+            height: 487px;
+
+            @include media-m(xl) {
+                margin-left: calc(100px * 0.6667);
+                width: calc(1170px * 0.6667);
+                height: calc(487px * 0.6667);
+            }
+        }
+    }
+
+    .section3 {
+        position: relative;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &-title {
+            position: relative;
+            margin-bottom: 80px;
+
+            @include media-m(xl) {
+                margin-bottom: calc(80px * 0.6667);
+            }
+        }
+
+        &-list-work {
+            margin-bottom: 100px;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 16px;
+
+            @include media-m(xl) {
+                margin-bottom: calc(100px * 0.6667);
+                gap: calc(16px * 0.6667);
+            }
+        }
+
+        &-card {
+            width: 334px;
+            height: 370px;
+
+            background-color: #E3F7F3;
+            border-radius: 30px;
+
+            @include media-m(xl) {
+                width: calc(334px * 0.6667);
+                height: calc(370px * 0.6667);
+            }
+
+            &-img {
+                width: 334px;
+                height: 370px;
+
+                @include media-m(xl) {
+                    width: calc(334px * 0.6667);
+                    height: calc(370px * 0.6667);
+                }
+            }
+        }
+
+        &-btn-see-more {
+            width: 334px;
+            height: 370px;
+            padding-top: 50px;
+            padding-left: 50px;
+            padding-right: 50px;
+
+            @include media-m(xl) {
+                width: calc(334px * 0.6667);
+                height: calc(370px * 0.6667);
+                padding-top: calc(50px * 0.6667);
+                padding-left: calc(50px * 0.6667);
+                padding-right: calc(50px * 0.6667);
+            }
+
+            .div {
+                width: 200px !important;
+
+                @include media-m(xl) {
+                    width: calc(200px * 0.6667);
+                }
+            }
+        }
+    }
+}
