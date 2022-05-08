@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/appprooii-portal/static/css/main.b6268373.css",
-    "main.js": "/appprooii-portal/static/js/main.dbad4484.js",
+    "main.js": "/appprooii-portal/static/js/main.beae57e8.js",
     "static/media/iconstr-2.png": "/appprooii-portal/static/media/iconstr-2.d2720523a1f791ea7cf8.png",
     "static/media/iconstr2x.png": "/appprooii-portal/static/media/iconstr2x.557cfedcff4a63d12252.png",
     "static/media/footer_BG-1800px.jpg": "/appprooii-portal/static/media/footer_BG-1800px.1d352da84b108468540b.jpg",
@@ -64,10 +64,10 @@
     "static/media/travel.jpg": "/appprooii-portal/static/media/travel.d57b78a863b2dfc6160e.jpg",
     "index.html": "/appprooii-portal/index.html",
     "main.b6268373.css.map": "/appprooii-portal/static/css/main.b6268373.css.map",
-    "main.dbad4484.js.map": "/appprooii-portal/static/js/main.dbad4484.js.map"
+    "main.beae57e8.js.map": "/appprooii-portal/static/js/main.beae57e8.js.map"
   },
   "entrypoints": [
     "static/css/main.b6268373.css",
-    "static/js/main.dbad4484.js"
+    "static/js/main.beae57e8.js"
   ]
 }
