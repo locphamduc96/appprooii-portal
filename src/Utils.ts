@@ -16,7 +16,7 @@ function decodeHTMLEntities(text: string) {
 
 const Utils = {
   getDateFromMillis,
-  decodeHTMLEntities
+  decodeHTMLEntities,
 };
 
 export default Utils;

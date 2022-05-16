@@ -1,11 +1,11 @@
-.list-news-item {
+.list-blog-item {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 32px;
     justify-items: center;
 }
 
-.news-item {
+.blog-item {
     cursor: pointer;
 
     position: relative;
@@ -32,7 +32,7 @@
         background: #D8FFE7 0% 0% no-repeat padding-box;
 
         @include media-m(xl) {
-            width: calc(215px);                
+            width: calc(215px);
             height: calc(149px);
             border-radius: 20px;
         }
@@ -48,8 +48,8 @@
         color: #BDBDBD;
 
         @include media-m(xl) {
-            padding: calc(16px * 0.6667) calc(16px * 0.6667) 0;      
-            font-size: calc(18px * 0.6667);          
+            padding: calc(16px * 0.6667) calc(16px * 0.6667) 0;
+            font-size: calc(18px * 0.6667);
         }
     }
 
@@ -61,7 +61,7 @@
         color: $black-color;
 
         @include media-m(xl) {
-            padding: calc(16px * 0.6667) calc(16px * 0.6667) 0;                
+            padding: calc(16px * 0.6667) calc(16px * 0.6667) 0;
             font-size: calc(20px * 0.6667);
             line-height: calc(24px * 0.6667);
         }

@@ -187,12 +187,11 @@
             justify-content: flex-end;
             gap: 30px;
 
-            width: 51px;
+            width: fit-content;
             height: 51px;
 
             @include media-m(xl, xxl, xxxl, _4xl) {
                 gap: calc(30px * var(--size-divisor));
-                width: calc(51px * var(--size-divisor));
                 height: calc(51px * var(--size-divisor));
             }
 

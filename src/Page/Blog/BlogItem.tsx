@@ -4,15 +4,15 @@ import ImageStorage from "../../Constant/ImageStorage";
 const BlogItem = ({ id, imgSrc, title, time }: any) => {
   return (
     <Link to={`/blog/${id}`}>
-      <div className='section2-news'>
-        <div className='section2-news-img'>
+      <div className='blog-item'>
+        <div className='blog-item-img'>
           {imgSrc ? <img src={imgSrc} alt='' /> : null}
         </div>
-        <div className='section2-news-content'>
-          <p className='section2-news-time'>{time}</p>
-          <p className='section2-news-title'>{title}</p>
+        <div className='blog-item-content'>
+          <p className='blog-item-time'>{time}</p>
+          <p className='blog-item-title'>{title}</p>
           <img
-            className='section2-news-arrow'
+            className='blog-item-arrow'
             src={ImageStorage.arrow1}
             alt=''
           />

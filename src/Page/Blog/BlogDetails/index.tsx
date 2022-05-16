@@ -1,13 +1,35 @@
+import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import ImageStorage from '../../../Constant/ImageStorage';
+import TBlogDetails from '../../../Defines/TBlogDetails';
+import BlogsServices from '../../../Services/BlogsServices';
 import Utils from '../../../Utils';
-import sample from '../../../assets/html-sample.json';
 import BlogItem from '../BlogItem';
 
 const BlogDetailsPage = () => {
+  const { id } = useParams();
+  const [blogDetails, setBlogDetails] = useState<TBlogDetails>();
+
+  useEffect(() => {
+    const getBlogDetails = async () => {
+      if (id) {
+        const data = await BlogsServices.getBlogsDetails(id);
+        if (data) {
+          setBlogDetails(data);
+        }
+      }
+    };
+    getBlogDetails();
+  }, [id]);
+
   return (
     <div className='news-details'>
       <div className='section1'>
-        <img className='section1-cover-image' src={ImageStorage.newsBanner} alt='' />
+        <img
+          className='section1-cover-image'
+          src={ImageStorage.newsBanner}
+          alt=''
+        />
       </div>
       <div className='section2'>
         <div className='wrapper'>
@@ -19,7 +41,7 @@ const BlogDetailsPage = () => {
               className='title-text-background'
             />
             <div className='title-text-content news-title'>
-              Cách xây dựng thương hiệu thành công cho mobile app
+              {blogDetails?.title}
             </div>
           </div>
           <div className='section2-time'>
@@ -29,15 +51,17 @@ const BlogDetailsPage = () => {
               className='section2-time-icon'
             />
             <div className='section2-time-text'>
-              {Utils.getDateFromMillis(sample.data.createdAt)}
+              {Utils.getDateFromMillis(blogDetails?.createAt || 0)}
             </div>
           </div>
           <div className='content'>
-            <div
-              dangerouslySetInnerHTML={{
-                __html: Utils.decodeHTMLEntities(sample.data.content),
-              }}
-            />
+            {blogDetails?.content ? (
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: Utils.decodeHTMLEntities(blogDetails?.content),
+                }}
+              />
+            ) : null}
           </div>
           <div className='share-news'>
             <div className='text'>Share this:</div>
@@ -116,7 +140,7 @@ const BlogDetailsPage = () => {
           <div className='title-text'>
             <span className='green'>Recommended</span> Posts
           </div>
-          <div className='list-news-item'>
+          <div className='list-blog-item'>
             {NEWS_ARR.map((news, index) => {
               return (
                 <BlogItem

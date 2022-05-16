@@ -9,6 +9,10 @@ const Path = {
   CONTENT_MARKETING: '/services/content-marketing',
   WEBSITE_AUDIT: '/services/website-audit',
   MARKETING_AUTOMATION: '/services/marketing-automation',
+  //
+  FACEBOOK: 'https://www.facebook.com/approi.ltd',
+  ZALO: '',
+  LINKEDIN: 'https://www.linkedin.com/company/approi'
 }
 
 export default Path;

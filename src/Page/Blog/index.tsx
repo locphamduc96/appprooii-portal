@@ -1,20 +1,22 @@
 import { useEffect, useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import ImageStorage from '../../Constant/ImageStorage';
+import TBlogDetails from '../../Defines/TBlogDetails';
 import BlogsServices from '../../Services/BlogsServices';
 import BlogItem from './BlogItem';
 
 const BlogPage = () => {
-  const [listBlogData, setListBlogData] = useState([]);
+  const [listBlogData, setListBlogData] = useState<TBlogDetails[]>([]);
 
   useEffect(() => {
-    const getBlog =async () => {
-      const _listBlogData = BlogsServices.getBlogs();
-      console.log(_listBlogData)
-    }
-
+    const getBlog = async () => {
+      const data: any = (await BlogsServices.getBlogs());
+      if (data) {
+        setListBlogData(data.NEWS);
+      }
+    };
     getBlog();
-  })
+  }, []);
 
   return (
     <div className='news'>
@@ -33,16 +35,16 @@ const BlogPage = () => {
       <div className='section2'>
         <div className='wrapper'>
           <div className='section2-list-new'>
-            {NEWS_ARR.map((news, index) => {
-              return (
-                <BlogItem
-                  id={news.id}
-                  imgSrc={news.imgSrc}
-                  time={news.time}
-                  title={news.title}
-                />
-              );
-            })}
+            {listBlogData.map((blogData, index) => {
+                return (
+                  <BlogItem
+                    id={blogData.id}
+                    imgSrc={ImageStorage.newsImage}
+                    time={blogData.createAt}
+                    title={blogData.title}
+                  />
+                );
+              })}
           </div>
           <Pagination />
         </div>
@@ -52,27 +54,6 @@ const BlogPage = () => {
 };
 
 export default BlogPage;
-
-// const News = ({ id, imgSrc, title, time }: any) => {
-//   return (
-//     <Link to={`/blog/${id}`}>
-//       <div className='section2-news'>
-//         <div className='section2-news-img'>
-//           {imgSrc ? <img src={imgSrc} alt='' /> : null}
-//         </div>
-//         <div className='section2-news-content'>
-//           <p className='section2-news-time'>{time}</p>
-//           <p className='section2-news-title'>{title}</p>
-//           <img
-//             className='section2-news-arrow'
-//             src='images/arrow_1.png'
-//             alt=''
-//           />
-//         </div>
-//       </div>
-//     </Link>
-//   );
-// };
 
 const Pagination = ({ startIndex, endIndex, currentIndex }: any) => {
   // const [currentValue, setCurrentValue] = useState<number>(2);

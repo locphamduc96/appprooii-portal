@@ -51,21 +51,31 @@ const Footer = () => {
               </div>
               <div className='footer-info-text-contact'>CONTACT US</div>
               <div className='footer-info-channel'>
-                <img
-                  src={ImageStorage.zaloIcon}
-                  alt=''
-                  className='footer-info-channel-icon cursor'
-                />
-                <img
-                  src={ImageStorage.linkedInIcon}
-                  alt=''
-                  className='footer-info-channel-icon cursor'
-                />
-                <img
-                  src={ImageStorage.facebookIcon1}
-                  alt=''
-                  className='footer-info-channel-icon cursor'
-                />
+                <a href={Path.ZALO} target='_blank' rel='noopener noreferrer'>
+                  <img
+                    src={ImageStorage.zaloIcon}
+                    alt=''
+                    className='footer-info-channel-icon cursor-pointer'
+                  />
+                </a>
+                <a href={Path.FACEBOOK} target='_blank' rel='noopener noreferrer'>
+                  <img
+                    src={ImageStorage.facebookIcon1}
+                    alt=''
+                    className='footer-info-channel-icon cursor-pointer'
+                  />
+                </a>
+                <a
+                  href={Path.LINKEDIN}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  <img
+                    src={ImageStorage.linkedInIcon}
+                    alt=''
+                    className='footer-info-channel-icon cursor-pointer'
+                  />
+                </a>
               </div>
             </div>
             <img

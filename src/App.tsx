@@ -17,8 +17,8 @@ import './Style/app.scss';
 function App() {
   return (
     <div className='body'>
-      {/* <HashRouter> */}
-      <BrowserRouter>
+      <HashRouter>
+      {/* <BrowserRouter> */}
         <NavBar />
         <ScrollToTop>
           <Routes>
@@ -35,8 +35,8 @@ function App() {
           </Routes>
         </ScrollToTop>
         <Footer />
-      </BrowserRouter>
-      {/* </HashRouter> */}
+      {/* </BrowserRouter> */}
+      </HashRouter>
     </div>
   );
 }
