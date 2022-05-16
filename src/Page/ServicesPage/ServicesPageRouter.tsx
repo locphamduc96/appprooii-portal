@@ -25,7 +25,7 @@ const ServicesPageRouter = () => {
     case 'affiliate-marketing':
       return <DigitalMarketing {...DigitalMktConstant.AFFILIATE_MARKETING} />;
     case 'content-marketing':
-      return <DigitalMarketing {...DigitalMktConstant.CONTENT_MARKETING} />;
+      return <DigitalMarketing {...DigitalMktConstant.SOCIAL_CONTENT} />;
     case 'website-audit':
       return <DigitalMarketing {...DigitalMktConstant.WEBSITE_AUDIT} />;
     case 'marketing-automation':
