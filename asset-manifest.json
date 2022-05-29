@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/appprooii-portal/static/css/main.d72fb02b.css",
-    "main.js": "/appprooii-portal/static/js/main.0fa48e61.js",
+    "main.css": "/appprooii-portal/static/css/main.da45968b.css",
+    "main.js": "/appprooii-portal/static/js/main.3e6fe952.js",
     "static/media/iconstr-2.png": "/appprooii-portal/static/media/iconstr-2.d2720523a1f791ea7cf8.png",
     "static/media/iconstr2x.png": "/appprooii-portal/static/media/iconstr2x.557cfedcff4a63d12252.png",
     "static/media/Mr.Duong-Creative-Planning-Manager.png": "/appprooii-portal/static/media/Mr.Duong-Creative-Planning-Manager.866a48d33e8c2286d5e3.png",
@@ -43,6 +43,7 @@
     "static/media/hocmai.png": "/appprooii-portal/static/media/hocmai.5148960e9c12495d9d9f.png",
     "static/media/Group--4.png": "/appprooii-portal/static/media/Group--4.72d102bfb7a01dc20468.png",
     "static/media/footer_BG-1800px-p-1600.jpeg": "/appprooii-portal/static/media/footer_BG-1800px-p-1600.aa9eccd3c406bbe7528f.jpeg",
+    "static/media/avatar-frame.png": "/appprooii-portal/static/media/avatar-frame.17e3a1d44983258bc10e.png",
     "static/media/Group-1-copy-8.png": "/appprooii-portal/static/media/Group-1-copy-8.7a7872ec381acea1297d.png",
     "static/media/svsub-BG_Header-p-1600.jpeg": "/appprooii-portal/static/media/svsub-BG_Header-p-1600.a80ff3f80032880654dd.jpeg",
     "static/media/2svsub-BG_Header-p-1600.jpeg": "/appprooii-portal/static/media/2svsub-BG_Header-p-1600.c6e58beb6ee7d66c293c.jpeg",
@@ -69,11 +70,11 @@
     "static/media/header-background.png": "/appprooii-portal/static/media/header-background.4af3dfa1063c44abb865.png",
     "static/media/travel.jpg": "/appprooii-portal/static/media/travel.d57b78a863b2dfc6160e.jpg",
     "index.html": "/appprooii-portal/index.html",
-    "main.d72fb02b.css.map": "/appprooii-portal/static/css/main.d72fb02b.css.map",
-    "main.0fa48e61.js.map": "/appprooii-portal/static/js/main.0fa48e61.js.map"
+    "main.da45968b.css.map": "/appprooii-portal/static/css/main.da45968b.css.map",
+    "main.3e6fe952.js.map": "/appprooii-portal/static/js/main.3e6fe952.js.map"
   },
   "entrypoints": [
-    "static/css/main.d72fb02b.css",
-    "static/js/main.0fa48e61.js"
+    "static/css/main.da45968b.css",
+    "static/js/main.3e6fe952.js"
   ]
 }
