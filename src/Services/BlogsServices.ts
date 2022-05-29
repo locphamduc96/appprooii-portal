@@ -1,4 +1,5 @@
-const API = 'http://34.87.83.179:9020/api';
+// const API = 'http://34.87.83.179:9020/api';
+const API = 'https://backend.approi.co/api';
 
 const getBlogs = async () => {
   const urlParams = new URLSearchParams({

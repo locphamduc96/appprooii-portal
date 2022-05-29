@@ -3,6 +3,7 @@ import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 import Footer from './Component/Footer';
 import NavBar from './Component/NavBar';
 import ScrollToTop from './Component/ScrollToTop';
+import ScrollToTopButton from './Component/ScrollToTopButton';
 import AboutUsPage from './Page/AboutUs';
 import BlogPage from './Page/Blog';
 import BlogDetailsPage from './Page/Blog/BlogDetails';
@@ -17,8 +18,8 @@ import './Style/app.scss';
 function App() {
   return (
     <div className='body'>
-      <HashRouter>
-      {/* <BrowserRouter> */}
+      {/* <HashRouter> */}
+      <BrowserRouter>
         <NavBar />
         <ScrollToTop>
           <Routes>
@@ -35,8 +36,9 @@ function App() {
           </Routes>
         </ScrollToTop>
         <Footer />
-      {/* </BrowserRouter> */}
-      </HashRouter>
+        <ScrollToTopButton />
+      </BrowserRouter>
+      {/* </HashRouter> */}
     </div>
   );
 }

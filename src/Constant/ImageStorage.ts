@@ -64,6 +64,14 @@ import footerVerticalLine from '../assets/images/footer-line.png';
 
 import calendarIcon from '../assets/images/calendar.png';
 
+import avatarFrame from '../assets/images/avatar-frame.png'
+import leaderBinh from '../assets/images/leader/Mr.Binh-Chairman.png';
+import leaderDuong1 from '../assets/images/leader/Mr.Duong-CEO.png';
+import leaderDuong2 from '../assets/images/leader/Mr.Duong-Creative-Planning-Manager.png';
+import leaderTuan from '../assets/images/leader/Mr.Tuan-BD-Manager.png';
+import leaderVinh from '../assets/images/leader/Mr.Vinh-Director-of-Growth.png';
+import leaderHien from '../assets/images/leader/Ms.Hien-CFO.png';
+
 const ImageStorage = {
   approiLogo,
 
@@ -130,6 +138,14 @@ const ImageStorage = {
   footerVerticalLine,
 
   calendarIcon,
+
+  avatarFrame,
+  leaderBinh,
+  leaderDuong1,
+  leaderDuong2,
+  leaderTuan,
+  leaderVinh,
+  leaderHien,
 };
 
 export default ImageStorage;

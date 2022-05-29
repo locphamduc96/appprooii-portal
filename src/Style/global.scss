@@ -105,3 +105,15 @@ html {
         height: calc(913px * var(--size-divisor));
     }
 }
+
+.highlight-110 {
+    &:hover {
+        filter: brightness(1.1);
+    }
+}
+
+.highlight-125 {
+    &:hover {
+        filter: brightness(1.25);
+    }
+}

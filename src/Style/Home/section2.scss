@@ -145,7 +145,7 @@
                 width: 80%;
 
                 @include media-m(xl) {
-                    top: calc(75px * 0.6667);                
+                    top: calc(75px * 0.6667);
                     font-size: calc(22px * 0.6667);
                 }
             }
@@ -154,6 +154,8 @@
                 z-index: 2;
 
                 position: absolute;
+                width: 45px;
+                height: 19px;
                 bottom: 38px;
 
                 cursor: pointer;
@@ -162,16 +164,26 @@
                 transform-style: preserve-3d;
                 filter: brightness(100%);
 
-                transition: transform 0.3s ease;
+                transition: all 0.3s ease;
 
-                @include media-m(xl) {
-                    bottom: calc(38px *0.6666);
+                &:hover {
+                    filter: brightness(110%);
+                }
+
+                @include media-m(xl, xxl, xxxl, _4xl) {
+                    width: calc(45px * var(--size-divisor));
+                    height: calc(19px * var(--size-divisor));
+                    bottom: calc(38px * var(--size-divisor));
                 }
 
                 &.flip {
                     transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(180deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
                     transform-style: preserve-3d;
                     filter: brightness(200%);
+
+                    &:hover {
+                        filter: brightness(120%) !important;
+                    }
                 }
             }
 
@@ -187,6 +199,8 @@
 
                 transition: opacity 0.3s ease;
 
+                z-index: -1;
+
                 @include media-m(xl) {
                     width: calc(514px * 0.6667);
                     height: calc(280px * 0.6667);
@@ -195,6 +209,7 @@
                 }
 
                 &.open {
+                    z-index: 1;
                     opacity: 1;
                 }
 
@@ -284,10 +299,14 @@
                     position: absolute;
                     bottom: 5px;
                     right: 10px;
+                    width: 47px;
+                    height: 19px;
 
-                    @include media-m() {
-                        bottom: calc(5px * 0.6667);
-                        right: calc(10px * 0.6667);
+                    @include media-m(xl, xxl, xxxl, _4xl) {
+                        bottom: calc(5px * var(--size-divisor));
+                        right: calc(10px * var(--size-divisor));
+                        width: calc(47px * var(--size-divisor));
+                        height: calc(19px * var(--size-divisor));
                     }
                 }
             }

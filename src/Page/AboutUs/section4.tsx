@@ -1,22 +1,22 @@
 import ImageStorage from '../../Constant/ImageStorage';
 
 const TEAM_INFO = [
-  { imgUrl: ImageStorage.aboutUsMember1, name: 'Mr. Binh', role: 'Chair man' },
-  { imgUrl: ImageStorage.aboutUsMember1, name: 'Mr. Duong', role: 'C.E.O' },
+  { imgUrl: ImageStorage.leaderBinh, name: 'Mr. Binh', role: 'Chair man' },
+  { imgUrl: ImageStorage.leaderDuong1, name: 'Mr. Duong', role: 'C.E.O' },
   {
-    imgUrl: ImageStorage.aboutUsMember1,
+    imgUrl: ImageStorage.leaderHien,
     name: 'Mr. Hien',
     role: 'Chief of Finance',
   },
 
   {
-    imgUrl: ImageStorage.aboutUsMember1,
+    imgUrl: ImageStorage.leaderVinh,
     name: 'Mr. Vinh',
     role: 'Head of Growth',
   },
-  { imgUrl: ImageStorage.aboutUsMember1, name: 'Mr. Tuan', role: 'B.D. Manager' },
+  { imgUrl: ImageStorage.leaderTuan, name: 'Mr. Tuan', role: 'B.D. Manager' },
   {
-    imgUrl: ImageStorage.aboutUsMember1,
+    imgUrl: ImageStorage.leaderDuong2,
     name: 'Mr. Duong',
     role: 'Creative Manager',
   },
@@ -52,6 +52,11 @@ const TeamInfo = ({ id, imgUrl, name, role }: any) => {
   return (
     <div className='section4-team-member'>
       <img src={imgUrl} alt='' className='section4-team-member-avatar' />
+      <img
+        src={ImageStorage.avatarFrame}
+        alt=''
+        className='section4-team-member-avatar-frame'
+      />
       <div className='section4-team-member-name'>{name}</div>
       <div className='section4-team-member-role'>{role}</div>
     </div>

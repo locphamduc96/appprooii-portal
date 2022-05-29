@@ -1,0 +1,33 @@
+.scroll-to-top-button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+    width: 48px;
+    height: 48px;
+    border-radius: 5px;
+    border: solid teal 2px;
+
+    color: teal;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include media-m(xl, xxl, xxxl, _4xl) {
+        right: calc(20px * var(--size-divisor));
+        bottom: calc(20px * var(--size-divisor));
+
+        width: calc(48px * var(--size-divisor));
+        height: calc(48px * var(--size-divisor));
+
+        border-radius: calc(5px * var(--size-divisor));
+        border-width: calc(2px * var(--size-divisor));
+    }
+
+    &:hover {
+        color: white;
+        background-color: teal;
+    }
+}

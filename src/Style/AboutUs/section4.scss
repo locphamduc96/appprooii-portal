@@ -28,7 +28,7 @@
             align-items: center;
 
             @include media-m(xl) {
-                top: calc(340px * 0.6667);                
+                top: calc(340px * 0.6667);
             }
         }
 
@@ -49,7 +49,7 @@
             @include media-m(xl) {
                 margin: calc(20px * 0.6667) auto;
                 padding: 64px 0;
-                font-size: calc(45px * 0.6667);           
+                font-size: calc(45px * 0.6667);
                 line-height: calc(45px * 0.6667);
             }
 
@@ -66,8 +66,8 @@
             -ms-grid-columns: 1fr 1fr 1fr;
             grid-template-columns: 1fr 1fr 1fr;
 
-            -ms-grid-rows: auto auto;
             grid-template-rows: auto auto;
+            -ms-grid-rows: auto auto;
 
             grid-row-gap: 32px;
             grid-column-gap: 126px;
@@ -81,31 +81,45 @@
         &-team-member {
             display: flex;
             flex-direction: column;
+            align-items: center;
 
             &-avatar {
+                position: relative;
+                top: 10px;
+
                 max-width: 100%;
-                vertical-align: middle;
-                display: inline-block;
 
-                width: 250px;
-                height: 258px;
+                width: 240px;
+                height: 240px;
 
-                @include media-m(xl) {
-                    width: calc(250px * 0.6667);                
-                    height: calc(258px * 0.6667);
+                @include media-m(xl, xxl, xxxl, _4xl) {
+                    width: calc(235px * var(--size-divisor));
+                    height: calc(235px * var(--size-divisor));
+                }
+            }
+
+            &-avatar-frame {
+                position: absolute;
+
+                width: 269px;
+                height: 278px;
+
+                @include media-m(xl, xxl, xxxl, _4xl) {
+                    width: calc(269px * var(--size-divisor));
+                    height: calc(278px * var(--size-divisor));
                 }
             }
 
             &-name {
+                margin-top: 24px;
                 font-family: $font-family;
                 font-size: 24px;
                 font-weight: 900;
-                text-align: center;
 
                 color: #0a2d27;
-                
+
                 @include media-m(xl) {
-                    font-size: calc(24px * 0.6667);                
+                    font-size: calc(24px * 0.6667);
                 }
             }
 
@@ -113,12 +127,11 @@
                 font-family: $font-family;
                 font-size: 14px;
                 font-weight: 500;
-                text-align: center;
 
                 color: #0a2d27;
 
                 @include media-m(xl) {
-                    font-size: calc(14px * 0.6667);                
+                    font-size: calc(14px * 0.6667);
                 }
             }
         }
