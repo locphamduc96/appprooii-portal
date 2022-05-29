@@ -14,9 +14,9 @@
 
         z-index: 0;
 
-        @include media-m(xl) {
-            margin: calc(-297px * 0.6667) auto 0;
-            height: calc(1346px * 0.6667);
+        @include media-m(xl, xxl, xxxl, _4xl) {
+            margin: calc(-297px * var(--size-divisor)) auto 0;
+            height: calc(1346px * var(--size-divisor));
         }
 
         &-content {
